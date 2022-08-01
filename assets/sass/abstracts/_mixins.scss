@@ -55,3 +55,13 @@
         };
     }
 }
+
+//font mixins
+
+@mixin base-fs {
+        font-size: 16px;
+
+        @include res(md){
+            font-size: 15px;
+        }
+}
