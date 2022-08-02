@@ -4,78 +4,81 @@
     }
 }
 
-.head-logo{
-    width: 6rem;
-    float: left;
-}
-
-.head-bottom{
-   border-top: 2px solid #eee600;
+.testimonial{
+    display: flex;
+   border-top: 2px solid $secondary-light;
+   text-align: justify;
    padding-top: 2.5rem;
+
+   .head-logo{
+    width: 6rem;
+    height: 6rem;
+   }
+
+   .head-text{
+    margin-left: 2rem;
+   }
 }
 
-.head-text{
-        margin-left: 7rem;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
-}
-
-.option{
+.offer{
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-    padding: auto;
-}
 
-.details{
-    width: 15rem;
-}
-
-.logo-1{
-    width: 5rem;
-    border: 4px solid #eee600;
-    background-color: transparent;
-    border-radius: 4rem;
-    padding: 0.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.clients{
-    padding-top: 5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.about{
-    color:#eee600;
-    font-size: 2rem;
-}
-
-.companies-1,
-.companies-2{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 4rem;
-}
-
-.companies-3{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 3rem;
-    border-top: 2px solid grey;
-    padding-bottom: 2rem;
-}
-
-.type-1,
-.type-2 {
-    width: 10rem;
+    .option{
+        width: 15rem;
     }
 
-.type-3,
-.type-4 {
-    margin-top: 2rem;
-    width: 8rem;
-    height: 2rem;
-}    
+    .about{
+        width: 7rem;
+        border: 3px solid $secondary-light;
+        background-color: transparent;
+        border-radius: 4rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.client, 
+.software-client{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.client-companies{
+        display: flex;   
+        justify-content: space-between;
+        margin-top: 4rem;
+    
+        .client-image{
+            width: 15rem;
+        }
+    }
+
+.software-companies{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid $text-grey;
+    margin-top: 3rem;
+
+    .client-image {
+        margin-top: 4rem;
+        width: auto;
+        height: 2rem;
+    }    
+}
+
+.big-tile {
+    width: 25%;
+    border: 5px solid $secondary-light;
+    text-align: left;
+    position: relative;
+
+    .top-left{
+        position: absolute;
+        line-height: 2.5rem !important;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }

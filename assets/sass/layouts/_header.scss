@@ -1,0 +1,49 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: $color-grey;
+}
+
+.nav-header{
+    width: 100%;
+    position: fixed;
+    background-color: $color-grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+
+    & > .container, .nav-body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+        .logo{
+            width: 15rem;
+            }
+        
+        .nav-menu{
+        margin-left: 2rem;
+            }
+    
+        .nav-link{
+        letter-spacing: 0.0rem;
+        text-decoration: none !important;
+        color: $color-white;
+        margin: 0rem 2rem;
+    
+        &:hover {
+        color: $secondary-light;
+        border-bottom: 6px solid $secondary-light;
+        padding-bottom: 22px;
+            }
+        }   
+}
+
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/assets/img/hero-section-bg.jpg);
+    background-size: cover;
+    background-position: top;
+}
