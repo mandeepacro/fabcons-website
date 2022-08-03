@@ -4130,7 +4130,7 @@ html {
       font-size: 43.75%; } }
 
 section {
-  padding: 12rem 0; }
+  padding: 15rem 0; }
 
 .tile-section {
   padding: 5rem 0rem;
@@ -4212,6 +4212,12 @@ p, a {
   color: #FFE600;
   font-size: 2rem; }
 
+.text-primary-color-medium {
+  color: #D3E5FD; }
+
+.text-center {
+  text-align: center; }
+
 button {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #FFE600;
@@ -4261,15 +4267,15 @@ body {
 .head-top h1, .head-top .h1 {
   font-weight: 600; }
 
-.testimonial {
+.head-testimonial {
   display: flex;
   border-top: 2px solid #FFE600;
   text-align: justify;
   padding-top: 2.5rem; }
-  .testimonial .head-logo {
+  .head-testimonial .head-logo {
     width: 6rem;
     height: 6rem; }
-  .testimonial .head-text {
+  .head-testimonial .head-text {
     margin-left: 2rem; }
 
 .offer {
@@ -4286,27 +4292,29 @@ body {
     padding: 1rem;
     margin-bottom: 1.5rem; }
 
-.client,
-.software-client {
+.client-section {
   padding-bottom: 2rem;
   text-align: center; }
 
 .client-companies {
   display: flex;
-  justify-content: space-between;
-  margin-top: 4rem; }
+  justify-content: space-around; }
   .client-companies .client-image {
-    width: 15rem; }
+    width: 12rem;
+    margin-bottom: 3rem; }
+
+.software-section {
+  text-align: center;
+  padding-bottom: 5rem; }
 
 .software-companies {
   display: flex;
-  justify-content: space-evenly;
-  border-top: 2px solid #8E8E8E;
-  margin-top: 3rem; }
-  .software-companies .client-image {
-    margin-top: 4rem;
+  justify-content: space-around;
+  padding: 3.5rem;
+  border: 3px solid #8E8E8E; }
+  .software-companies .software-image {
     width: auto;
-    height: 2rem; }
+    height: 2.5rem; }
 
 .big-tile {
   width: 25%;
@@ -4319,3 +4327,10 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.testimonial-section {
+  padding: 5rem 0rem; }
+
+.testimonial-logo {
+  width: 8rem;
+  padding-bottom: 1rem; }
