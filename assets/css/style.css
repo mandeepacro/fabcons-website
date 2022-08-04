@@ -4229,6 +4229,12 @@ p, a {
   color: #FFE600;
   font-size: 2rem; }
 
+.text-primary-color-medium {
+  color: #D3E5FD; }
+
+.text-center {
+  text-align: center; }
+
 button {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #FFE600;
@@ -4364,16 +4370,20 @@ body {
 
 .client-companies {
   display: flex;
-  justify-content: space-between;
-  margin-top: 4rem; }
+  justify-content: space-around; }
   .client-companies .client-image {
-    width: 15rem; }
+    width: 12rem;
+    margin-bottom: 3rem; }
+
+.software-section {
+  text-align: center;
+  padding-bottom: 5rem; }
 
 .software-companies {
   display: flex;
-  justify-content: space-evenly;
-  border-top: 2px solid #8E8E8E;
-  margin-top: 3rem; }
+  justify-content: space-around;
+  padding: 3.5rem;
+  border: 3px solid #8E8E8E; }
   .software-companies .client-image {
     margin-top: 4rem;
     width: auto;
@@ -4390,3 +4400,10 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.testimonial-section {
+  padding: 5rem 0rem; }
+
+.testimonial-logo {
+  width: 8rem;
+  padding-bottom: 1rem; }
