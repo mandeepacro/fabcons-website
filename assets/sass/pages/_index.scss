@@ -55,11 +55,11 @@
     }
 }
 
-.client,
-.software-client {
-    padding-bottom: 2rem;
-    text-align: center;
-}
+// .client,
+// .software-client {
+//     padding-bottom: 2rem;
+//     text-align: center;
+// }
 
     .client-companies{
         display: flex;
@@ -82,7 +82,7 @@
         padding: 3.5rem;
         border: 3px solid $text-grey;
 
-    .client-image {
+    .software-image {
         margin-top: 4rem;
         width: auto;
         height: 2rem;
