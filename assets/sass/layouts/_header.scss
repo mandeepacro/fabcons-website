@@ -7,10 +7,12 @@ body{
 .nav-header{
     width: 100%;
     position: fixed;
+    z-index: 1000;
     background-color: $color-grey;
     display: flex;
     justify-content: space-between;
     padding: 1.6rem 0;
+    max-height: 7.5rem;
 
     & > .container, .nav-body{
         display: flex;
@@ -38,12 +40,4 @@ body{
         padding-bottom: 22px;
             }
         }   
-}
-
-.hero-section{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(/assets/img/hero-section-bg.jpg);
-    background-size: cover;
-    background-position: top;
 }

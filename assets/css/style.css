@@ -4130,7 +4130,7 @@ html {
       font-size: 43.75%; } }
 
 section {
-  padding: 12rem 0; }
+  padding: 7.2rem 0; }
 
 .tile-section {
   padding: 5rem 0rem;
@@ -4141,7 +4141,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .
   font-weight: 700; }
 
 h1, .h1 {
-  font-size: 6rem;
+  font-size: 5.4rem;
   line-height: 8rem;
   letter-spacing: 0.1rem;
   margin-bottom: 2rem; }
@@ -4173,6 +4173,12 @@ h6, .h6, .h6 {
   letter-spacing: -0.08rem;
   margin-bottom: 0.8rem; }
 
+.title-subheading {
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.08rem;
+  line-height: 1; }
+
 .text-300 {
   font-weight: 300 !important; }
 
@@ -4194,10 +4200,21 @@ h6, .h6, .h6 {
 p, a {
   font-family: Inter;
   color: #FFFFFF;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 500; }
   @media (max-width: 61.99em) {
     p, a {
       font-size: 15px; } }
+
+.p-quote {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  font-style: italic; }
+
+.p-lesstext {
+  line-height: 1.3; }
 
 .text-white {
   color: #FFFFFF; }
@@ -4219,7 +4236,44 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: Manrope;
-  border: none; }
+  border: none;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+  transition-duration: 100ms; }
+  button:hover {
+    transform: translateY(-2px); }
+  button:active {
+    transform: translateY(0); }
+
+.btn-icon {
+  min-width: 4rem;
+  min-height: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative; }
+  .btn-icon svg, .btn-icon img {
+    height: 50%; }
+  .btn-icon-outline {
+    border: 1.5px solid #FFFFFF;
+    background-color: transparent; }
+  .btn-icon:hover {
+    transform: translateY(-2px);
+    border-color: #FFE600; }
+  .btn-icon:active {
+    transform: translateY(0); }
+
+.owl-carousel-topright .owl-nav {
+  display: flex;
+  gap: 4rem;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  width: 100%; }
 
 body {
   margin: 0 auto;
@@ -4229,10 +4283,12 @@ body {
 .nav-header {
   width: 100%;
   position: fixed;
+  z-index: 1000;
   background-color: #2E2E38;
   display: flex;
   justify-content: space-between;
-  padding: 1.6rem 0; }
+  padding: 1.6rem 0;
+  max-height: 7.5rem; }
   .nav-header > .container, .nav-header .nav-body {
     display: flex;
     align-items: center;
@@ -4253,38 +4309,53 @@ body {
 
 .hero-section {
   width: 100%;
+  padding-top: 14rem;
   min-height: 100vh;
   background-image: url(/assets/img/hero-section-bg.jpg);
   background-size: cover;
-  background-position: top; }
+  background-position: bottom center;
+  padding-bottom: 4rem; }
 
 .head-top h1, .head-top .h1 {
-  font-weight: 600; }
+  font-weight: 600;
+  max-width: 40rem; }
 
-.testimonial {
-  display: flex;
-  border-top: 2px solid #FFE600;
-  text-align: justify;
-  padding-top: 2.5rem; }
-  .testimonial .head-logo {
-    width: 6rem;
-    height: 6rem; }
-  .testimonial .head-text {
-    margin-left: 2rem; }
+.testimonial-herosection {
+  border-top: 1px solid #FFE600;
+  padding-top: 3rem;
+  margin-top: 3rem; }
+
+.testimonial-block {
+  display: flex; }
+
+.testimonial-img {
+  min-width: 6rem;
+  min-height: 6rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%; }
+
+.testimonial-content {
+  margin-left: 2rem; }
 
 .offer {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: space-between; }
+  margin-top: 6rem; }
   .offer .option {
-    width: 15rem; }
-  .offer .about {
-    width: 7rem;
-    border: 3px solid #FFE600;
-    background-color: transparent;
-    border-radius: 4rem;
-    padding: 1rem;
-    margin-bottom: 1.5rem; }
+    width: 16rem; }
+    .offer .option-img {
+      min-width: 8rem;
+      min-height: 8rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #FFE600;
+      margin-bottom: 1.5rem; }
+      .offer .option-img img {
+        width: 50%;
+        height: auto; }
 
 .client,
 .software-client {

@@ -1,61 +1,79 @@
-.head-top{
-    h1{
+.hero-section {
+    width: 100%;
+    padding-top: 14rem;
+    min-height: 100vh;
+    background-image: url(/assets/img/hero-section-bg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    padding-bottom: 4rem;
+}
+
+.head-top {
+    h1 {
         font-weight: 600;
+        max-width: 40rem;
     }
 }
 
-.testimonial{
-    display: flex;
-   border-top: 2px solid $secondary-light;
-   text-align: justify;
-   padding-top: 2.5rem;
-
-   .head-logo{
-    width: 6rem;
-    height: 6rem;
-   }
-
-   .head-text{
-    margin-left: 2rem;
-   }
-}
-
-.offer{
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-between;
-
-    .option{
-        width: 15rem;
+.testimonial {
+    &-herosection{
+        border-top: 1px solid $secondary-light;
+        padding-top: 3rem;
+        margin-top: 3rem;
+    }
+    &-block {
+        display: flex;
+       
+       
     }
 
-    .about{
-        width: 7rem;
-        border: 3px solid $secondary-light;
-        background-color: transparent;
-        border-radius: 4rem;
-        padding: 1rem;
-        margin-bottom: 1.5rem;
+    &-img {
+        @include circle(6rem);
+    }
+
+    &-content {
+        margin-left: 2rem;
+    }
+
+}
+
+.offer {
+    margin-top: 6rem;
+
+    .option {
+        width: 16rem;
+
+        &-img {
+            @include circle(8rem);
+            @include flex-center;
+            border: 1.5px solid $secondary-light;
+            margin-bottom: 1.5rem;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
     }
 }
 
-.client, 
-.software-client{
+.client,
+.software-client {
     padding-bottom: 2rem;
     text-align: center;
 }
 
-.client-companies{
-        display: flex;   
-        justify-content: space-between;
-        margin-top: 4rem;
-    
-        .client-image{
-            width: 15rem;
-        }
-    }
+.client-companies {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
 
-.software-companies{
+    .client-image {
+        width: 15rem;
+    }
+}
+
+.software-companies {
     display: flex;
     justify-content: space-evenly;
     border-top: 2px solid $text-grey;
@@ -65,7 +83,7 @@
         margin-top: 4rem;
         width: auto;
         height: 2rem;
-    }    
+    }
 }
 
 .big-tile {
@@ -74,11 +92,11 @@
     text-align: left;
     position: relative;
 
-    .top-left{
+    .top-left {
         position: absolute;
         line-height: 2.5rem !important;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-  }
+}
