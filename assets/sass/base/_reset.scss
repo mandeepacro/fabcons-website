@@ -24,7 +24,10 @@ html{
     }
 
 }
-
+a{
+    transition: $transition-primary;
+    text-decoration: none;
+}
 section{
     padding: 7.2rem 0;
 }

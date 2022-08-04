@@ -112,3 +112,110 @@
         width: 8rem;
         padding-bottom: 1rem;
     }
+
+    .services{
+        &-section{
+            padding-top: 0;
+        }
+        &-bg{
+            img{
+                min-height: 80vh;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                width: 100%;
+            }
+            
+        }
+
+        &-content{
+            padding: 4rem 0 6rem;
+        }
+
+        &-grid{
+            margin: 2rem 0;
+        }
+
+        &-tabs{
+            margin-top: 4rem;
+            margin-right: 8vw;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                border-bottom: 1px solid $color-white;
+                padding: 0;
+                overflow-x: scroll;
+
+                &::-webkit-scrollbar {
+                   height: 0;
+                   width: 0;
+                  }
+                  
+                  /* Track */
+                //  &::-webkit-scrollbar-track {
+                //     background: #f1f1f1;
+                //   }
+                  
+                li {
+                    a{
+                        padding: 1.2rem 2.2rem;
+                        color: $text-grey;
+                        display: block;
+                        font-family: Manrope;
+                        @include medium-fs;
+                        text-decoration: none;
+                        white-space: nowrap;
+                        &:hover{
+                            color: $secondary-light;
+                            background-color: $secondary-hover;
+                        }
+    
+                       
+                    }
+                    &.ui-tabs-active a{
+                        color: $color-white;
+                        font-weight: 600;
+                        background-color: $color-grey;
+                    }
+                } 
+
+               
+            }
+        }
+    }
+
+    .service{
+        &-card{
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            position: relative;
+            padding: 1rem 1.6rem;
+            margin-top: 2rem;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                z-index: 2;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%);
+            }
+            .text{
+                z-index: 5;
+            }
+        }
+    }

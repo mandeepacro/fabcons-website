@@ -65,3 +65,11 @@
             font-size: 15px;
         }
 }
+
+@mixin medium-fs {
+    font-size: 18px;
+
+    @include res(md){
+        font-size: 16px;
+    }
+}

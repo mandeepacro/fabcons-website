@@ -11,9 +11,9 @@ h1 {
 }
 
 h2,.h2 {
-    font-size: 5.2rem;
-    line-height: 6rem;
-    letter-spacing: -0.1rem;
+    font-size: 3.6rem;
+    line-height: 1.2;
+    letter-spacing: 0;
     margin-bottom: 1.8rem;
 }
 h3,.h3
@@ -38,7 +38,6 @@ h5,.h5{
 
 h6,.h6{
     font-size: 1.8rem;
-    letter-spacing: -0.08rem;
     margin-bottom: 0.8rem;
 }
 .title-subheading{
@@ -46,6 +45,9 @@ h6,.h6{
     font-size: 2rem;
     letter-spacing: 0.08rem;
     line-height: 1;
+}
+.section-subheading{
+    margin-bottom: 6rem;
 }
 .text-300{
     font-weight: 300 !important;

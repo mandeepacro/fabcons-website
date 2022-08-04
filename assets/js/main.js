@@ -24,4 +24,5 @@ feather.replace();
 
   $(document).ready(function(){
     initializeOwlCarousel();
+    $( "#serviceTabs" ).tabs();
   });

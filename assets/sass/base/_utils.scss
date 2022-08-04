@@ -6,13 +6,16 @@
     color: $text-grey;
 }
 
+.bg-darker{
+    background-color: $grey-dark;
+}
+
 .text-color-light{
     color: $primary-color-light;
 }
 
 .text-secondary-light{
     color: $secondary-light;
-    font-size: 2rem;
 }
 
 .text-primary-color-medium{
