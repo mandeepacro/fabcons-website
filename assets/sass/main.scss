@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap");
 
 @import "../vendors/bootstrap/scss/functions";
 
@@ -26,23 +26,21 @@
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../vendors/bootstrap/scss/utilities/api";
 
-
 //OUR SCSS
-@import 'abstracts/var';
-@import 'abstracts/mixins';
+@import "abstracts/var";
+@import "abstracts/mixins";
 
-@import 'base/animations';
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/utils';
+@import "base/animations";
+@import "base/reset";
+@import "base/typography";
+@import "base/utils";
 
-@import 'components/buttons';
-@import 'components/card';
-@import 'components/forms';
-@import 'components/owl-carousel';
+@import "components/buttons";
+@import "components/card";
+@import "components/forms";
+@import "components/owl-carousel";
 
-@import 'layouts/header';
-@import 'layouts/footer';
+@import "layouts/header";
+@import "layouts/footer";
 
-
-@import 'pages/index';
+@import "pages/index";

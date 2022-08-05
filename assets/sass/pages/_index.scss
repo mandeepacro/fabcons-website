@@ -1,56 +1,54 @@
 .hero-section {
-    width: 100%;
-    padding-top: 14rem;
-    min-height: 100vh;
-    background-image: url(/assets/img/hero-section-bg.jpg);
-    background-size: cover;
-    background-position: bottom center;
-    padding-bottom: 4rem;
+  width: 100%;
+  padding-top: 14rem;
+  min-height: 100vh;
+  background-image: url(../../assets/img/hero-section-bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  padding-bottom: 4rem;
 }
 
 .head-top {
-    h1 {
-        font-weight: 600;
-        max-width: 40rem;
-    }
+  h1 {
+    font-weight: 600;
+    max-width: 40rem;
+  }
 }
 
 .testimonial {
-    &-herosection{
-        border-top: 1px solid $secondary-light;
-        padding-top: 3rem;
-        margin-top: 3rem;
-    }
-    &-block {
-        display: flex;
-    }
+  &-herosection {
+    border-top: 1px solid $secondary-light;
+    padding-top: 3rem;
+    margin-top: 3rem;
+  }
+  &-block {
+    display: flex;
+  }
 
-    &-img {
-        margin-right: 2rem;
-        @include circle(6rem)
-    }
-
+  &-img {
+    margin-right: 2rem;
+    @include circle(6rem);
+  }
 }
 
-
 .offer {
-    margin-top: 6rem;
+  margin-top: 6rem;
 
-    .option {
-        width: 16rem;
+  .option {
+    width: 16rem;
 
-        &-img {
-            @include circle(8rem);
-            @include flex-center;
-            border: 1.5px solid $secondary-light;
-            margin-bottom: 1.5rem;
+    &-img {
+      @include circle(8rem);
+      @include flex-center;
+      border: 1.5px solid $secondary-light;
+      margin-bottom: 1.5rem;
 
-            img {
-                width: 50%;
-                height: auto;
-            }
-        }
+      img {
+        width: 50%;
+        height: auto;
+      }
     }
+  }
 }
 
 // .client,
@@ -59,216 +57,208 @@
 //     text-align: center;
 // }
 
-    .client-row{
-        display: flex;
-        justify-content: space-around;
-        &:not(:last-child){
-            margin-bottom: 5rem;
-        }
+.client-row {
+  display: flex;
+  justify-content: space-around;
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 
-        .client-image{
-            width: 12rem;
-        }
-    }
+  .client-image {
+    width: 12rem;
+  }
+}
 
-    .software{
-        &-section{
-            text-align: center;
-            padding-bottom: 5rem;
-        }
-    
-        &-row{
-            display: flex;
-            justify-content: space-around;
-           
-            border-top: 1px solid $text-grey;
-            border-bottom: 1px solid $text-grey;
-            &:last-child{
-                border-top: none;
-            }
-    
-       
-    }
-    &-image {
-        width: auto;
-        height: 2rem;
-    }
+.software {
+  &-section {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
 
-    &-block{
-        padding: 3rem 0;
+  &-row {
+    display: flex;
+    justify-content: space-around;
+
+    border-top: 1px solid $text-grey;
+    border-bottom: 1px solid $text-grey;
+    &:last-child {
+      border-top: none;
+    }
+  }
+  &-image {
+    width: auto;
+    height: 2rem;
+  }
+
+  &-block {
+    padding: 3rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-        &:not(:last-child){
-            border-right: 1px solid $text-grey;
-        }
+    &:not(:last-child) {
+      border-right: 1px solid $text-grey;
     }
+  }
 }
 
 .big-tile {
+  position: relative;
+  padding: 4rem;
+  outline: 5px solid $secondary-light;
+  background-image: url(../../assets/img/Rectangle-57.jpg);
+  background-size: cover;
+  min-height: 80vh;
+  // .top-left {
+  //     position: absolute;
+  //     line-height: 2.5rem !important;
+  //     top: 25%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  // }
+
+  h1 {
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.2rem;
+  }
+}
+
+.testimonial {
+  &-section {
+    padding: 5rem 0rem;
+  }
+
+  &-logo {
+    @include circle(10rem);
+    margin-bottom: 1rem;
+  }
+
+  &-card {
+    padding: 1.6rem 2.4rem;
+    border: 1.5px solid rgba($secondary-light, 0.2);
     position: relative;
-    padding: 4rem;
-   outline: 5px solid $secondary-light;
-    background-image: url(/assets/img/Rectangle-57.jpg);
-    background-size: cover;
-    min-height: 80vh;
-    // .top-left {
-    //     position: absolute;
-    //     line-height: 2.5rem !important;
-    //     top: 25%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    // }
-
-    h1{
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing: -0.2rem;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/icons/quote.svg);
+      height: 19rem;
+      width: 19rem;
+      background-size: contain;
+      top: -5rem;
+      right: -4rem;
+      opacity: 10%;
     }
   }
 
+  &-info {
+    margin-top: 2rem;
+  }
+}
 
-
-  .testimonial{
-    &-section{
-        padding: 5rem 0rem;
-        }
-           
-      &-logo{
-            @include circle(10rem);
-            margin-bottom: 1rem;
-        }
-
-        &-card{
-            padding: 1.6rem 2.4rem;
-            border: 1.5px solid rgba($secondary-light,0.2);
-            position: relative;
-            overflow: hidden;
-            &::before{
-                content: "";
-                position: absolute;
-                background-image: url(/assets/img/icons/quote.svg);
-                height: 19rem;
-                width: 19rem;
-                background-size: contain;
-                top: -5rem;
-                right: -4rem;
-                opacity: 10%;
-
-            }
-        }
-
-        &-info{
-            margin-top: 2rem;
-        }
+.services {
+  &-section {
+    padding-top: 0;
+  }
+  &-bg {
+    img {
+      min-height: 80vh;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      width: 100%;
+    }
   }
 
-    .services{
-        &-section{
-            padding-top: 0;
-        }
-        &-bg{
-            img{
-                min-height: 80vh;
-                height: 100%;
-                object-fit: cover;
-                object-position: top;
-                width: 100%;
-            }
-            
-        }
+  &-content {
+    padding: 4rem 0 6rem;
+  }
 
-        &-content{
-            padding: 4rem 0 6rem;
+  &-grid {
+    margin: 2rem 0;
+  }
+
+  &-tabs {
+    margin-top: 4rem;
+    margin-right: 8vw;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      border-bottom: 1px solid $color-white;
+      padding: 0;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+      }
+
+      /* Track */
+      //  &::-webkit-scrollbar-track {
+      //     background: #f1f1f1;
+      //   }
+
+      li {
+        a {
+          padding: 1.2rem 2.2rem;
+          color: $text-grey;
+          display: block;
+          font-family: Manrope;
+          @include medium-fs;
+          text-decoration: none;
+          white-space: nowrap;
+          &:hover {
+            color: $secondary-light;
+            background-color: $secondary-hover;
+          }
         }
-
-        &-grid{
-            margin: 2rem 0;
+        &.ui-tabs-active a {
+          color: $color-white;
+          font-weight: 600;
+          background-color: $color-grey;
         }
+      }
+    }
+  }
+}
 
-        &-tabs{
-            margin-top: 4rem;
-            margin-right: 8vw;
-            ul{
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                border-bottom: 1px solid $color-white;
-                padding: 0;
-                overflow-x: scroll;
-
-                &::-webkit-scrollbar {
-                   height: 0;
-                   width: 0;
-                  }
-                  
-                  /* Track */
-                //  &::-webkit-scrollbar-track {
-                //     background: #f1f1f1;
-                //   }
-                  
-                li {
-                    a{
-                        padding: 1.2rem 2.2rem;
-                        color: $text-grey;
-                        display: block;
-                        font-family: Manrope;
-                        @include medium-fs;
-                        text-decoration: none;
-                        white-space: nowrap;
-                        &:hover{
-                            color: $secondary-light;
-                            background-color: $secondary-hover;
-                        }
-    
-                       
-                    }
-                    &.ui-tabs-active a{
-                        color: $color-white;
-                        font-weight: 600;
-                        background-color: $color-grey;
-                    }
-                } 
-
-               
-            }
-        }
+.service {
+  &-card {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    padding: 1rem 1.6rem;
+    margin-top: 2rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
     }
 
-    .service{
-        &-card{
-            height: 20rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            position: relative;
-            padding: 1rem 1.6rem;
-            margin-top: 2rem;
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-
-            &::before{
-                content: "";
-                position: absolute;
-                top: 0;
-                z-index: 2;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%);
-            }
-            .text{
-                z-index: 5;
-            }
-        }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        3.47deg,
+        #1a1a20 19.3%,
+        rgba(37, 37, 45, 0.05) 91.8%
+      );
     }
-
-   
+    .text {
+      z-index: 5;
+    }
+  }
+}

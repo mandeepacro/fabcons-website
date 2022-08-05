@@ -4136,7 +4136,13 @@ a {
 section {
   padding: 7.2rem 0; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: Manrope;
   font-weight: 700; }
 
@@ -4146,13 +4152,15 @@ h1, .h1 {
   letter-spacing: 0.1rem;
   margin-bottom: 2rem; }
 
-h2, .h2, .h2 {
+h2, .h2,
+.h2 {
   font-size: 3.6rem;
   line-height: 1.2;
   letter-spacing: 0;
   margin-bottom: 1.8rem; }
 
-h3, .h3, .h3 {
+h3, .h3,
+.h3 {
   font-size: 3rem;
   line-height: 3.5rem;
   letter-spacing: 0.1rem; }
@@ -4162,11 +4170,13 @@ h4, .h4 {
   letter-spacing: 0.02rem;
   line-height: 3rem; }
 
-h5, .h5, .h5 {
+h5, .h5,
+.h5 {
   font-size: 2rem;
   margin-bottom: 1rem; }
 
-h6, .h6, .h6 {
+h6, .h6,
+.h6 {
   font-size: 1.8rem;
   margin-bottom: 0.8rem; }
 
@@ -4199,13 +4209,15 @@ h6, .h6, .h6 {
 .text-800 {
   font-weight: 800 !important; }
 
-p, a {
+p,
+a {
   font-family: Inter;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 500; }
   @media (max-width: 61.99em) {
-    p, a {
+    p,
+    a {
       font-size: 15px; } }
 
 .p-quote {
@@ -4332,7 +4344,8 @@ body {
   justify-content: space-between;
   padding: 1.6rem 0;
   max-height: 7.5rem; }
-  .nav-header > .container, .nav-header .nav-body {
+  .nav-header > .container,
+  .nav-header .nav-body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -4341,7 +4354,7 @@ body {
   .nav-header .nav-menu {
     margin-left: 2rem; }
   .nav-header .nav-link {
-    letter-spacing: 0.0rem;
+    letter-spacing: 0rem;
     text-decoration: none !important;
     color: #FFFFFF;
     margin: 0rem 2rem;
@@ -4372,14 +4385,15 @@ body {
     padding-bottom: 1rem; }
   .footer-link-left p, .footer-link-right p {
     margin-bottom: 0.6rem; }
-  .footer-link-right h4, .footer-link-right .h4, .footer-link-right p {
+  .footer-link-right h4, .footer-link-right .h4,
+  .footer-link-right p {
     text-align: right; }
 
 .hero-section {
   width: 100%;
   padding-top: 14rem;
   min-height: 100vh;
-  background-image: url(/assets/img/hero-section-bg.jpg);
+  background-image: url(../../assets/img/hero-section-bg.jpg);
   background-size: cover;
   background-position: bottom center;
   padding-bottom: 4rem; }
@@ -4460,7 +4474,7 @@ body {
   position: relative;
   padding: 4rem;
   outline: 5px solid #FFE600;
-  background-image: url(/assets/img/Rectangle-57.jpg);
+  background-image: url(../../assets/img/Rectangle-57.jpg);
   background-size: cover;
   min-height: 80vh; }
   .big-tile h1, .big-tile .h1 {
@@ -4487,7 +4501,7 @@ body {
   .testimonial-card::before {
     content: "";
     position: absolute;
-    background-image: url(/assets/img/icons/quote.svg);
+    background-image: url(../../assets/img/icons/quote.svg);
     height: 19rem;
     width: 19rem;
     background-size: contain;
@@ -4571,6 +4585,6 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
+    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
   .service-card .text {
     z-index: 5; }
