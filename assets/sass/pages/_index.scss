@@ -26,14 +26,12 @@
     }
 
     &-img {
-        @include circle(6rem);
-    }
-
-    &-content {
-        margin-left: 2rem;
+        margin-right: 2rem;
+        @include circle(6rem)
     }
 
 }
+
 
 .offer {
     margin-top: 6rem;
@@ -61,57 +59,110 @@
 //     text-align: center;
 // }
 
-    .client-companies{
+    .client-row{
         display: flex;
         justify-content: space-around;
+        &:not(:last-child){
+            margin-bottom: 5rem;
+        }
 
         .client-image{
             width: 12rem;
-            margin-bottom: 3rem;
         }
     }
 
-    .software-section{
-        text-align: center;
-        padding-bottom: 5rem;
+    .software{
+        &-section{
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+    
+        &-row{
+            display: flex;
+            justify-content: space-around;
+           
+            border-top: 1px solid $text-grey;
+            border-bottom: 1px solid $text-grey;
+            &:last-child{
+                border-top: none;
+            }
+    
+       
     }
-
-    .software-companies{
-        display: flex;
-        justify-content: space-around;
-        padding: 3.5rem;
-        border: 3px solid $text-grey;
-
-    .software-image {
-        margin-top: 4rem;
+    &-image {
         width: auto;
         height: 2rem;
+    }
+
+    &-block{
+        padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+        &:not(:last-child){
+            border-right: 1px solid $text-grey;
+        }
     }
 }
 
 .big-tile {
-    width: 25%;
-    border: 5px solid $secondary-light;
-    text-align: left;
     position: relative;
+    padding: 4rem;
+   outline: 5px solid $secondary-light;
+    background-image: url(/assets/img/Rectangle-57.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    // .top-left {
+    //     position: absolute;
+    //     line-height: 2.5rem !important;
+    //     top: 25%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
 
-    .top-left {
-        position: absolute;
-        line-height: 2.5rem !important;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    h1{
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.2rem;
     }
   }
 
-  .testimonial-section{
-    padding: 5rem 0rem;
-    }
-       
-    .testimonial-logo{
-        width: 8rem;
-        padding-bottom: 1rem;
-    }
+
+
+  .testimonial{
+    &-section{
+        padding: 5rem 0rem;
+        }
+           
+      &-logo{
+            @include circle(10rem);
+            margin-bottom: 1rem;
+        }
+
+        &-card{
+            padding: 1.6rem 2.4rem;
+            border: 1.5px solid rgba($secondary-light,0.2);
+            position: relative;
+            overflow: hidden;
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url(/assets/img/icons/quote.svg);
+                height: 19rem;
+                width: 19rem;
+                background-size: contain;
+                top: -5rem;
+                right: -4rem;
+                opacity: 10%;
+
+            }
+        }
+
+        &-info{
+            margin-top: 2rem;
+        }
+  }
 
     .services{
         &-section{
@@ -219,3 +270,5 @@
             }
         }
     }
+
+   

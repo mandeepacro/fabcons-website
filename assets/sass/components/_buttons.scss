@@ -15,8 +15,6 @@ button{
     &:active{
         transform: translateY(0);
     }
-    &:focus{
-    }
 }
 
 .btn-icon{
@@ -35,6 +33,46 @@ button{
     &:hover{
         transform: translateY(-2px);
         border-color: $secondary-light;
+    }
+    &:active{
+        transform: translateY(0);
+    }
+}
+
+
+.btn-white{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: $color-white;
+    color: $text-dark;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Manrope;
+    border: none;
+    outline: none;
+    transition: $transition-primary;
+    transition-duration: 100ms;
+    &:hover{
+        transform: translateY(-2px);
+    }
+    &:active{
+        transform: translateY(0);
+    }
+}
+
+.btn-outline{
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: $grey-dark;
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Manrope;
+    border: none;
+    outline: 2px solid $color-white;
+    transition: $transition-primary;
+    transition-duration: 100ms;
+    margin-left: 2rem;
+    &:hover{
+        transform: translateY(-2px);
     }
     &:active{
         transform: translateY(0);

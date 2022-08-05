@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
     padding: 0;
-    background-color: $color-grey;
+    background-color: $grey-dark;
 }
 
 .nav-header{
@@ -33,11 +33,13 @@ body{
         text-decoration: none !important;
         color: $color-white;
         margin: 0rem 2rem;
+        border-bottom: 5px solid transparent;
+         padding-bottom: 22px;
     
         &:hover {
         color: $secondary-light;
-        border-bottom: 6px solid $secondary-light;
-        padding-bottom: 22px;
+        border-color:$secondary-light;
+       
             }
         }   
 }
