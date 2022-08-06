@@ -17,6 +17,13 @@
    width: $size;
    height: $size;
 }
+@mixin full-absolute-div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:0;
+}
 //MEDIA QUERY MANAGER - (takes the size of the screen and return the media query code)
 
 @mixin res($break-point){

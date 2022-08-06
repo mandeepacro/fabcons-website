@@ -75,29 +75,29 @@
     padding-bottom: 5rem;
   }
 
-  &-row {
-    display: flex;
-    justify-content: space-around;
-
-    border-top: 1px solid $text-grey;
-    border-bottom: 1px solid $text-grey;
-    &:last-child {
-      border-top: none;
-    }
-  }
   &-image {
     width: auto;
     height: 2rem;
   }
 
+  &-row {
+    display: flex;
+    justify-content: space-around;
+
+    border-top: 1px solid $border-grey-light;
+    border-bottom: 1px solid $border-grey-light;
+    &:last-child {
+      border-top: none;
+    }
+  }
   &-block {
-    padding: 3rem 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     &:not(:last-child) {
-      border-right: 1px solid $text-grey;
+      border-right: 1px solid $border-grey-light;
     }
   }
 }
@@ -105,10 +105,11 @@
 .big-tile {
   position: relative;
   padding: 4rem;
-  outline: 5px solid $secondary-light;
+  border: 5px solid $secondary-light;
   background-image: url(../../assets/img/Rectangle-57.jpg);
   background-size: cover;
-  min-height: 80vh;
+  width: 100%;
+  padding-bottom: 16rem;
   // .top-left {
   //     position: absolute;
   //     line-height: 2.5rem !important;
@@ -119,8 +120,42 @@
 
   h1 {
     font-weight: 800;
+    line-height: 1;
     line-height: 1.1;
     letter-spacing: -0.2rem;
+  }
+}
+
+.small-tile{
+  padding: 12rem 2rem 2rem;
+  border:1px solid $text-grey;
+  background-size: cover;
+  text-align: end;
+  &-number{
+    color: $color-white;
+    margin-bottom: 1.6rem;
+  }
+
+  &-number,p{
+    margin-left: auto;
+    max-width: 20rem;
+  }
+
+  &-1{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-68.jpg);
+  }
+
+  &-2{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-69.jpg);
+  } 
+
+  &-3{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-73.jpg);
+    height: 34.4rem;
+  }
+
+  &-4{
+    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg);
   }
 }
 
@@ -139,6 +174,7 @@
     border: 1.5px solid rgba($secondary-light, 0.2);
     position: relative;
     overflow: hidden;
+    width: 35rem;
     &::before {
       content: "";
       position: absolute;
@@ -168,6 +204,7 @@
       object-fit: cover;
       object-position: top;
       width: 100%;
+      transform: translateX(-2rem);
     }
   }
 
@@ -181,7 +218,7 @@
 
   &-tabs {
     margin-top: 4rem;
-    margin-right: 8vw;
+    margin-right: 6.5vw;
     ul {
       display: flex;
       justify-content: space-between;
@@ -262,3 +299,170 @@
     }
   }
 }
+
+.contact{
+  border-top: 1px solid $text-grey;
+  border-bottom: 1px solid $color-white;
+
+  h3{
+    padding: 4rem 0rem;
+  }
+
+  .contact-top{
+    text-align: left;
+    width: max-content;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .box-1{
+      float: left;
+      position: relative;
+      width: 185px;
+    }
+      
+    .box-2{
+      margin-left: 13rem;
+      float: right;
+      position: relative;
+      width: 180px;
+    }
+    
+        input {
+          font-family: Manrope;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          width: 150%;
+          font-size: 1.5rem;
+          color: $color-white;
+          box-sizing: border-box;
+          padding-bottom: 3px;
+          border-bottom: 3px solid rgba( $secondary-light,0.3);
+      
+          &:focus + .underline {
+            width: 150%;
+          }
+        }
+      
+        .underline {
+
+          // to center the animation
+          position: absolute;
+          bottom: 0;
+          left: 0%;
+          transform: translateX(0%);
+          height: 4px;
+          width: 0;
+          background-color: $secondary-light;
+          transition: .3s;
+        }
+      }
+
+
+      .contact-middle{
+        text-align: left;
+        width: max-content;
+ 
+        p{
+          padding-top: 1rem;
+         padding-bottom: 1rem
+        }
+ 
+       .box-3 { 
+       float: left; 
+       margin-right: 3rem;
+       }
+ 
+       .box-4 { 
+         display: inline-block; 
+       }
+       
+       .box-5 { 
+         float: right; 
+         margin-left: 3rem;
+       }
+ 
+       input {
+         font-family: Manrope;
+         background-color: transparent;
+         border: none;
+         outline: none;
+         width: 103%;
+         font-size: 1.5rem;
+         color: $color-white;
+         box-sizing: border-box;
+         padding-bottom: 3px;
+         border-bottom: 3px solid rgba( $secondary-light,0.3);
+     
+         &:focus + .underline {
+           width: 103%;
+         }
+       }
+     
+       .underline {
+         
+         // to center the animation
+         position: absolute;
+         bottom: 0;
+         left: 0%;
+         transform: translateX(0%);
+         height: 4px;
+         width: 0;
+         background-color: $secondary-light;
+         transition: .3s;
+       }
+     }
+ 
+     .contact-bottom{
+       text-align: left;
+ 
+        p{
+         padding-top: 2rem;
+         padding-bottom: 1rem;
+        }
+
+        .box-6{
+         position: relative;
+         width: 590px;
+       }
+       
+           input {
+             font-family: Manrope;
+             background-color: transparent;
+             border: none;
+             outline: none;
+             width: 100%;
+             font-size: 1.5rem;
+             color: $color-white;
+             box-sizing: border-box;
+             padding-bottom: 3px;
+             border-bottom: 3px solid rgba( $secondary-light,0.3);
+         
+             &:focus + .underline {
+               width: 100%;
+             }
+           }
+         
+           .underline {
+   
+             // to center the animation
+             position: absolute;
+             bottom: 0;
+             left: 0%;
+             transform: translateX(0%);
+             height: 4px;
+             width: 0;
+             background-color: $secondary-light;
+             transition: .3s;
+           }
+         }
+
+         .submit{
+          margin-top: 5rem;
+          text-align: center;
+          margin-bottom: 5rem;
+         }
+    }
+
+   

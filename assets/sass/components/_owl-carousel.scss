@@ -8,5 +8,19 @@
 }
 
 
+.owl-carousel-industry .owl-nav,.owl-carousel-testimonial .owl-nav{
+    position: absolute;
+    left: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.owl-carousel-testimonial .owl-nav{
+    padding: 0 4vw;
+}
 
 

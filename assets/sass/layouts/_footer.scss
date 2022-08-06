@@ -36,10 +36,82 @@
       margin-bottom: 0.6rem;
     }
   }
+
   &-link-right {
     h4,
     p {
       text-align: right;
+    }
+    }
+    
+    &-subscription{
+      padding: 3rem 0rem;
+    
+
+    .newsletter{
+      padding: 3rem 3rem;
+      background-color: $color-grey;
+
+      h5{
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+
+      .box {
+        position: relative;
+        display: inline-block;
+        width: 200px;
+      
+        input {
+          font-family: Manrope;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          width: 200%;
+          font-size: 1.5rem;
+          color: $color-white;
+          box-sizing: border-box;
+          padding-bottom: 4px;
+          border-bottom: 3px solid rgba( $secondary-light,0.3);
+      
+          &:focus + .underline {
+            width: 200%;
+          }
+        }
+      
+        .underline {
+          position: absolute;
+          bottom: 0;
+          
+          // to center the animation
+          position: absolute;
+          bottom: 0;
+          left: 0%;
+          transform: translateX(0%);
+          height: 2px;
+          width: 0;
+          background-color: $secondary-light;
+          transition: .3s;
+        }
+      }
+
+      
+    .subscribe{
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: -4.25rem
+    }
+    }
+  }
+
+  .follow-us{
+    text-align: end;
+
+      .social-media-image{
+        padding-top: 2rem;
+        padding-bottom: 4.8rem;
+        width: 4rem;
+        margin-left: 1rem;
     }
   }
 }
