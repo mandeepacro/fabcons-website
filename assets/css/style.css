@@ -4227,6 +4227,12 @@ a {
     a {
       font-size: 15px; } }
 
+.p-small {
+  font-size: 14px; }
+  @media (max-width: 61.99em) {
+    .p-small {
+      font-size: 16px; } }
+
 .p-quote {
   font-size: 1.6rem;
   line-height: 1.8;
@@ -4248,6 +4254,9 @@ a {
 
 .text-grey {
   color: #8E8E8E; }
+
+.bg-grey {
+  background-color: #2E2E38; }
 
 .bg-darker {
   background-color: #25252D; }
@@ -4292,10 +4301,15 @@ button {
   padding: 0;
   position: relative; }
   .btn-icon svg, .btn-icon img {
-    height: 50%; }
+    height: 50%;
+    color: #FFFFFF; }
   .btn-icon-outline {
     border: 1.5px solid #FFFFFF;
     background-color: transparent; }
+  .btn-icon-transparent {
+    background-color: transparent; }
+    .btn-icon-transparent:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
   .btn-icon:hover {
     transform: translateY(-2px);
     border-color: #FFE600; }
@@ -4396,22 +4410,70 @@ button {
   object-fit: cover;
   object-position: bottom; }
 
-.role-card-top {
-  border-bottom: 0.8px solid #DADADA;
-  padding-bottom: 0.2rem; }
-
-.role-card-bottom {
-  padding: 1.2rem 0;
-  border-bottom: 1px solid #FFFFFF; }
+.role-card {
+  margin-bottom: 4rem;
+  padding: 1rem; }
+  .role-card-top {
+    border-bottom: 0.8px solid rgba(218, 218, 218, 0.3);
+    padding-bottom: 0.2rem; }
+  .role-card-bottom {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .role-info {
-  margin-top: 3rem; }
-  .role-info > * {
-    margin-bottom: 0; }
+  margin-top: 2.5rem; }
+  .role-info p, .role-info h6, .role-info .h6 {
+    margin-bottom: 0;
+    letter-spacing: 0.1rem; }
+  .role-info p {
+    font-weight: 400;
+    font-size: 1.6rem; }
   .role-info-item {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
     display: flex;
     justify-content: space-between; }
+
+.role-price .old {
+  text-decoration: line-through;
+  margin-bottom: 0; }
+
+.role-price .new {
+  font-size: 2.8rem;
+  margin-top: -0.6rem;
+  color: #FFE600;
+  margin-bottom: 0;
+  font-weight: 600; }
+
+.role-action-buttons {
+  display: flex;
+  gap: 1rem; }
+
+.client-profile-box {
+  padding: 1.6rem 2rem; }
+  .client-profile-box-bottom {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .client-profile-box-bottom h6, .client-profile-box-bottom .h6 {
+      font-size: 14px; }
+      @media (max-width: 61.99em) {
+        .client-profile-box-bottom h6, .client-profile-box-bottom .h6 {
+          font-size: 16px; } }
+
+.client-profile-info {
+  text-align: end; }
+  .client-profile-info img {
+    width: 4rem; }
+
+.client-profile-row:not(:last-child) {
+  border-bottom: 0.8px solid rgba(142, 142, 142, 0.5); }
+
+.client-profile-col:not(:last-child) {
+  border-right: 0.8px solid rgba(142, 142, 142, 0.5); }
 
 .nav-header {
   width: 100%;
@@ -4443,7 +4505,8 @@ button {
       border-color: #FFE600; }
 
 .footer {
-  padding: 5rem 0rem; }
+  padding: 5rem 0rem;
+  border-top: 1px solid rgba(142, 142, 142, 0.5); }
   .footer-top {
     align-items: center;
     padding-bottom: 1.5rem;
@@ -4467,7 +4530,7 @@ button {
   .footer-link-right p {
     text-align: right; }
   .footer-subscription {
-    padding: 3rem 0rem; }
+    padding: 3rem 0rem 0; }
     .footer-subscription .newsletter {
       padding: 3rem 3rem;
       background-color: #2E2E38; }
@@ -4631,7 +4694,8 @@ button {
     background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg); }
 
 .testimonial-section {
-  padding: 5rem 0rem; }
+  border-bottom: 1px solid rgba(142, 142, 142, 0.5);
+  border-top: 1px solid rgba(142, 142, 142, 0.5); }
 
 .testimonial-logo {
   min-width: 10rem;
@@ -4739,27 +4803,25 @@ button {
   .service-card .text {
     z-index: 5; }
 
-.contact {
-  border-top: 1px solid #8E8E8E;
-  border-bottom: 1px solid #FFFFFF; }
-  .contact h3, .contact .h3 {
-    padding: 4rem 0rem; }
-  .contact .contact-top {
+.contact-section {
+  padding-left: 6.5vw;
+  padding-right: 3vw; }
+  .contact-section .contact-top {
     text-align: left;
     width: max-content;
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem; }
-    .contact .contact-top .box-1 {
+    .contact-section .contact-top .box-1 {
       float: left;
       position: relative;
       width: 185px; }
-    .contact .contact-top .box-2 {
+    .contact-section .contact-top .box-2 {
       margin-left: 13rem;
       float: right;
       position: relative;
       width: 180px; }
-    .contact .contact-top input {
+    .contact-section .contact-top input {
       font-family: Manrope;
       background-color: transparent;
       border: none;
@@ -4770,9 +4832,9 @@ button {
       box-sizing: border-box;
       padding-bottom: 3px;
       border-bottom: 3px solid rgba(255, 230, 0, 0.3); }
-      .contact .contact-top input:focus + .underline {
+      .contact-section .contact-top input:focus + .underline {
         width: 150%; }
-    .contact .contact-top .underline {
+    .contact-section .contact-top .underline {
       position: absolute;
       bottom: 0;
       left: 0%;
@@ -4781,21 +4843,21 @@ button {
       width: 0;
       background-color: #FFE600;
       transition: .3s; }
-  .contact .contact-middle {
+  .contact-section .contact-middle {
     text-align: left;
     width: max-content; }
-    .contact .contact-middle p {
+    .contact-section .contact-middle p {
       padding-top: 1rem;
       padding-bottom: 1rem; }
-    .contact .contact-middle .box-3 {
+    .contact-section .contact-middle .box-3 {
       float: left;
       margin-right: 3rem; }
-    .contact .contact-middle .box-4 {
+    .contact-section .contact-middle .box-4 {
       display: inline-block; }
-    .contact .contact-middle .box-5 {
+    .contact-section .contact-middle .box-5 {
       float: right;
       margin-left: 3rem; }
-    .contact .contact-middle input {
+    .contact-section .contact-middle input {
       font-family: Manrope;
       background-color: transparent;
       border: none;
@@ -4806,9 +4868,9 @@ button {
       box-sizing: border-box;
       padding-bottom: 3px;
       border-bottom: 3px solid rgba(255, 230, 0, 0.3); }
-      .contact .contact-middle input:focus + .underline {
+      .contact-section .contact-middle input:focus + .underline {
         width: 103%; }
-    .contact .contact-middle .underline {
+    .contact-section .contact-middle .underline {
       position: absolute;
       bottom: 0;
       left: 0%;
@@ -4817,15 +4879,15 @@ button {
       width: 0;
       background-color: #FFE600;
       transition: .3s; }
-  .contact .contact-bottom {
+  .contact-section .contact-bottom {
     text-align: left; }
-    .contact .contact-bottom p {
+    .contact-section .contact-bottom p {
       padding-top: 2rem;
       padding-bottom: 1rem; }
-    .contact .contact-bottom .box-6 {
+    .contact-section .contact-bottom .box-6 {
       position: relative;
       width: 590px; }
-    .contact .contact-bottom input {
+    .contact-section .contact-bottom input {
       font-family: Manrope;
       background-color: transparent;
       border: none;
@@ -4836,9 +4898,9 @@ button {
       box-sizing: border-box;
       padding-bottom: 3px;
       border-bottom: 3px solid rgba(255, 230, 0, 0.3); }
-      .contact .contact-bottom input:focus + .underline {
+      .contact-section .contact-bottom input:focus + .underline {
         width: 100%; }
-    .contact .contact-bottom .underline {
+    .contact-section .contact-bottom .underline {
       position: absolute;
       bottom: 0;
       left: 0%;
@@ -4847,7 +4909,11 @@ button {
       width: 0;
       background-color: #FFE600;
       transition: .3s; }
-  .contact .submit {
+  .contact-section .submit {
     margin-top: 5rem;
     text-align: center;
     margin-bottom: 5rem; }
+
+.client-profiles-section {
+  padding-right: 6.5vw;
+  padding-left: 3vw; }

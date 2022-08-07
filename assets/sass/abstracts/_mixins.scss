@@ -80,3 +80,11 @@
         font-size: 16px;
     }
 }
+
+@mixin small-fs {
+    font-size: 14px;
+
+    @include res(md){
+        font-size: 16px;
+    } 
+}

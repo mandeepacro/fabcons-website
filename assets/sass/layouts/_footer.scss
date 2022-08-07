@@ -1,5 +1,7 @@
 .footer {
-  padding: 5rem 0rem;
+  padding:5rem 0rem;
+  border-top: 1px solid $border-grey-light;
+
 
   &-top {
     align-items: center;
@@ -45,7 +47,7 @@
     }
     
     &-subscription{
-      padding: 3rem 0rem;
+      padding: 3rem 0rem 0;
     
 
     .newsletter{

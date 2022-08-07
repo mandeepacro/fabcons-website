@@ -24,10 +24,19 @@ button{
     position: relative;
     svg,img{
         height: 50%;
+        color: $color-white
     }
     &-outline{
         border: 1.5px solid $color-white;
         background-color: transparent;
+    }
+
+    &-transparent{
+        background-color: transparent;
+
+        &:hover{
+            background-color: rgba($color-white,0.1);
+        }
     }
 
     &:hover{

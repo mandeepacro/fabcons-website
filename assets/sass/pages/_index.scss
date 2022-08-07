@@ -161,7 +161,8 @@
 
 .testimonial {
   &-section {
-    padding: 5rem 0rem;
+    border-bottom: 1px solid $border-grey-light;
+    border-top: 1px solid $border-grey-light;
   }
 
   &-logo {
@@ -299,15 +300,12 @@
     }
   }
 }
-
-.contact{
-  border-top: 1px solid $text-grey;
-  border-bottom: 1px solid $color-white;
-
-  h3{
-    padding: 4rem 0rem;
-  }
-
+// .contact-section-grid{
+ 
+// }
+.contact-section{
+  padding-left:6.5vw;
+  padding-right:3vw;
   .contact-top{
     text-align: left;
     width: max-content;
@@ -464,5 +462,13 @@
           margin-bottom: 5rem;
          }
     }
+
+    .client-profiles-section{
+      padding-right:6.5vw;
+      padding-left:3vw;
+    }
+
+
+    
 
    

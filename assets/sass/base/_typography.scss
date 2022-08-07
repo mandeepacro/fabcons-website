@@ -93,6 +93,10 @@ a {
   font-weight: 500;
 }
 
+.p-small{
+  @include small-fs;
+}
+
 .p-quote {
   font-size: 1.6rem;
   line-height: 1.8;
