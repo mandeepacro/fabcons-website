@@ -4835,6 +4835,41 @@ button {
 .hero-about-section {
   background-image: url(/assets/img/aboutus-bg.jpg); }
 
+.hero-about-section-top {
+  padding-bottom: 10rem; }
+
+.hero-about-section-content h4, .hero-about-section-content .h4 {
+  padding-bottom: 1.4rem;
+  border-bottom: 2px solid #FFE600; }
+
+.hero-about-section-content p {
+  padding-top: 1.4rem; }
+
+.team-tile {
+  padding-bottom: 8rem; }
+  .team-tile .team-top {
+    padding-bottom: 5rem; }
+  .team-tile .team-card {
+    margin: 3rem 3rem;
+    border: 2px solid #8E8E8E; }
+  .team-tile .team-card-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem; }
+    .team-tile .team-card-left .team-card-image {
+      width: 12rem; }
+    .team-tile .team-card-left .team-card-right h4, .team-tile .team-card-left .team-card-right .h4 {
+      padding-bottom: 1rem; }
+    .team-tile .team-card-left .team-card-right .social-icon {
+      width: 3rem;
+      margin-right: 2rem; }
+  .team-tile .team-card-content {
+    padding: 0rem 2rem; }
+  .team-tile .team-button-action {
+    text-align: end;
+    padding: 3rem 3rem; }
+
 .hero-section {
   width: 100%;
   padding-top: 14rem;

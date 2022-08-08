@@ -2,3 +2,63 @@
   
   background-image: url(/assets/img/aboutus-bg.jpg);
 }
+
+.hero-about-section-top{
+  padding-bottom: 10rem;
+}
+
+.hero-about-section-content{
+
+  h4{
+    padding-bottom: 1.4rem;
+    border-bottom: 2px solid $secondary-light;
+  }
+  p{
+    padding-top: 1.4rem  }
+  }
+
+.team-tile{
+  padding-bottom: 8rem;
+
+  .team-top{
+    padding-bottom: 5rem;
+  }
+
+  .team-card{
+    margin: 3rem 3rem;
+    border: 2px solid $text-grey;
+  }
+
+  .team-card-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  
+    .team-card-image{ 
+      width: 12rem;      
+    }
+
+  .team-card-right{
+
+    h4{
+      padding-bottom: 1rem;
+    }
+
+    .social-icon{
+      width: 3rem;
+      margin-right: 2rem;
+      }
+    }
+  }
+
+    .team-card-content{
+      padding: 0rem 2rem;
+    }
+ 
+    .team-button-action{
+      text-align: end;
+      padding: 3rem 3rem;
+    }
+
+  }
