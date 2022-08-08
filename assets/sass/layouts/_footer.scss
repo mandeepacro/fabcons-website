@@ -82,15 +82,12 @@
         }
       
         .underline {
-          position: absolute;
-          bottom: 0;
-          
-          // to center the animation
+  
           position: absolute;
           bottom: 0;
           left: 0%;
           transform: translateX(0%);
-          height: 2px;
+          height: 4px;
           width: 0;
           background-color: $secondary-light;
           transition: .3s;

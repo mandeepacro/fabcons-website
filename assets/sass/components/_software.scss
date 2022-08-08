@@ -1,0 +1,32 @@
+.software {
+    &-section {
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+  
+    &-image {
+      width: auto;
+      height: 2rem;
+    }
+  
+    &-row {
+      display: flex;
+      justify-content: space-around;
+  
+      border-top: 1px solid $border-grey-light;
+      border-bottom: 1px solid $border-grey-light;
+      &:last-child {
+        border-top: none;
+      }
+    }
+    &-block {
+      padding: 5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      &:not(:last-child) {
+        border-right: 1px solid $border-grey-light;
+      }
+    }
+  }
