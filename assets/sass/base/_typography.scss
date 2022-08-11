@@ -17,7 +17,7 @@ h6,
 h1 {
   font-size: 5.4rem;
   line-height: 8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: -0.1rem;
   margin-bottom: 2rem;
 }
 
@@ -93,6 +93,11 @@ a {
   font-weight: 500;
 }
 
+a,span{
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 .p-small{
   @include small-fs;
 }
@@ -106,6 +111,7 @@ a {
 }
 .p-big{
   @include medium-fs;
+  line-height: 2;
 }
 .p-lesstext {
   line-height: 1.3;

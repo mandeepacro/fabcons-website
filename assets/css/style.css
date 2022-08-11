@@ -4155,7 +4155,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
 h1, .h1 {
   font-size: 5.4rem;
   line-height: 8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: -0.1rem;
   margin-bottom: 2rem; }
 
 h2, .h2,
@@ -4227,6 +4227,10 @@ a {
     a {
       font-size: 15px; } }
 
+a, span {
+  font-family: inherit;
+  font-weight: inherit; }
+
 .p-small {
   font-size: 14px; }
   @media (max-width: 61.99em) {
@@ -4241,7 +4245,8 @@ a {
   font-style: italic; }
 
 .p-big {
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 2; }
   @media (max-width: 61.99em) {
     .p-big {
       font-size: 16px; } }
@@ -4272,6 +4277,9 @@ a {
 
 .text-center {
   text-align: center; }
+
+.text-border-grey {
+  color: #DADADA; }
 
 button {
   padding: 1rem 2rem 1rem 2rem;
@@ -4558,6 +4566,46 @@ button {
   .software-block:not(:last-child) {
     border-right: 1px solid rgba(142, 142, 142, 0.5); }
 
+.offer {
+  margin-top: 6rem; }
+  .offer .option {
+    width: 16rem; }
+    .offer .option-img {
+      min-width: 8rem;
+      min-height: 8rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #FFE600;
+      margin-bottom: 1.5rem; }
+      .offer .option-img img {
+        width: 50%;
+        height: auto; }
+
+.tabs ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  overflow-x: scroll; }
+  .tabs ul::-webkit-scrollbar {
+    height: 0;
+    width: 0; }
+  .tabs ul li a {
+    font-weight: 400;
+    display: block;
+    font-family: Manrope;
+    font-size: 18px;
+    text-decoration: none;
+    white-space: nowrap; }
+    @media (max-width: 61.99em) {
+      .tabs ul li a {
+        font-size: 16px; } }
+  .tabs ul li.ui-tabs-active a {
+    font-weight: 600; }
+
 .nav-header {
   width: 100%;
   position: fixed;
@@ -4688,25 +4736,6 @@ button {
   height: 6rem;
   border-radius: 50%; }
 
-.offer {
-  margin-top: 6rem; }
-  .offer .option {
-    width: 16rem; }
-    .offer .option-img {
-      min-width: 8rem;
-      min-height: 8rem;
-      width: 8rem;
-      height: 8rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #FFE600;
-      margin-bottom: 1.5rem; }
-      .offer .option-img img {
-        width: 50%;
-        height: auto; }
-
 .client-row {
   display: flex;
   justify-content: space-around; }
@@ -4717,7 +4746,7 @@ button {
 
 .big-tile {
   position: relative;
-  padding: 4rem;
+  padding: 7rem 9rem;
   border: 5px solid #FFE600;
   background-image: url(../../assets/img/Rectangle-57.jpg);
   background-size: cover;
@@ -4771,33 +4800,16 @@ button {
   margin-top: 4rem;
   margin-right: 6.5vw; }
   .services-tabs ul {
-    display: flex;
     justify-content: space-between;
-    list-style: none;
-    border-bottom: 1px solid #FFFFFF;
-    padding: 0;
-    overflow-x: scroll;
-    /* Track */ }
-    .services-tabs ul::-webkit-scrollbar {
-      height: 0;
-      width: 0; }
+    border-bottom: 1px solid #FFFFFF; }
     .services-tabs ul li a {
       padding: 1.2rem 2.2rem;
-      color: #8E8E8E;
-      display: block;
-      font-family: Manrope;
-      font-size: 18px;
-      text-decoration: none;
-      white-space: nowrap; }
-      @media (max-width: 61.99em) {
-        .services-tabs ul li a {
-          font-size: 16px; } }
+      color: #8E8E8E; }
       .services-tabs ul li a:hover {
         color: #FFE600;
         background-color: rgba(255, 230, 0, 0.1); }
     .services-tabs ul li.ui-tabs-active a {
       color: #FFFFFF;
-      font-weight: 600;
       background-color: #2E2E38; }
 
 .service-card {
@@ -4833,731 +4845,157 @@ button {
   padding-right: 3vw; }
 
 .hero-about-section {
-  background-image: url(/assets/img/aboutus-bg.jpg); }
+  background-image: url(/assets/img/aboutus-bg.jpg);
+  background-position: top; }
 
 .hero-about-section-top {
-  padding-bottom: 10rem; }
+  padding-bottom: 12rem; }
 
 .hero-about-section-content h4, .hero-about-section-content .h4 {
-  padding-bottom: 1.4rem;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
   border-bottom: 2px solid #FFE600; }
 
 .hero-about-section-content p {
   padding-top: 1.4rem; }
 
-.team-tile {
-  padding-bottom: 8rem; }
-  .team-tile .team-top {
-    padding-bottom: 5rem; }
-  .team-tile .team-card {
-    margin: 3rem 3rem;
-    border: 2px solid #8E8E8E; }
-  .team-tile .team-card-left {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 2rem; }
-    .team-tile .team-card-left .team-card-image {
-      width: 12rem; }
-    .team-tile .team-card-left .team-card-right h4, .team-tile .team-card-left .team-card-right .h4 {
-      padding-bottom: 1rem; }
-    .team-tile .team-card-left .team-card-right .social-icon {
-      width: 3rem;
+.team-section .team-card {
+  margin: 0 1.5rem 3rem;
+  border: 1px solid #8E8E8E;
+  position: relative;
+  overflow: hidden; }
+  .team-section .team-card::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../assets/img/icons/union.svg);
+    height: 15rem;
+    width: 15rem;
+    background-size: cover;
+    top: -4rem;
+    right: -4rem;
+    opacity: 90%; }
+
+.team-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 2rem 2rem; }
+  .team-card-top .team-card-image {
+    width: 12rem; }
+  .team-card-top .team-card-right {
+    flex-basis: 1; }
+    .team-card-top .team-card-right .social-icon {
+      width: 2.4rem;
+      height: auto;
+      margin-top: 1.8rem;
       margin-right: 2rem; }
-  .team-tile .team-card-content {
-    padding: 0rem 2rem; }
-  .team-tile .team-button-action {
-    text-align: end;
-    padding: 3rem 3rem; }
 
-.hero-section {
+.team-card-content {
+  padding: 0rem 2rem; }
+  .team-card-content p {
+    line-height: 1.8; }
+
+.team-button-action {
+  text-align: end;
+  padding: 3rem 3rem; }
+
+.why-choose-us-box {
+  background-image: url(/assets/img/wcu-bg.jpg);
   width: 100%;
-  padding-top: 14rem;
-  min-height: 100vh;
-  background-image: url(../../assets/img/hero-section-bg.jpg);
   background-size: cover;
   background-position: bottom center;
-  padding-bottom: 4rem; }
-
-.head-top h1, .head-top .h1 {
-  font-weight: 600;
-  max-width: 40rem; }
-
-.testimonial-herosection {
-  border-top: 1px solid #FFE600;
-  padding-top: 3rem;
-  margin-top: 3rem; }
-
-.testimonial-block {
-  display: flex; }
-
-.testimonial-img {
-  margin-right: 2rem;
-  min-width: 6rem;
-  min-height: 6rem;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%; }
-
-.offer {
-  margin-top: 6rem; }
-  .offer .option {
-    width: 16rem; }
-    .offer .option-img {
-      min-width: 8rem;
-      min-height: 8rem;
-      width: 8rem;
-      height: 8rem;
+  padding: 4rem 6rem; }
+  .why-choose-us-box h2, .why-choose-us-box .h2 {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+  .why-choose-us-box .why-choose-us-card {
+    padding-bottom: 3rem;
+    width: 90%; }
+    .why-choose-us-box .why-choose-us-card .wcu-option {
+      min-width: 10rem;
+      min-height: 10rem;
+      width: 10rem;
+      height: 10rem;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 1rem;
       border: 1.5px solid #FFE600;
-      margin-bottom: 1.5rem; }
-      .offer .option-img img {
-        width: 50%;
-        height: auto; }
+      margin-bottom: 2rem; }
+    .why-choose-us-box .why-choose-us-card .wcu-image {
+      width: 75%; }
 
-.client-row {
-  display: flex;
-  justify-content: space-around; }
-  .client-row:not(:last-child) {
-    margin-bottom: 5rem; }
-  .client-row .client-image {
-    width: 12rem; }
-
-.big-tile {
+.staff-section .staff-big-tile {
   position: relative;
-  padding: 4rem;
-  border: 5px solid #FFE600;
-  background-image: url(../../assets/img/Rectangle-57.jpg);
+  padding: 7rem 9rem;
+  background-image: url(../../assets/img/staff.jpg);
+  background-size: cover;
+  width: 100%;
+  outline: 5px solid #FFE600;
   background-size: cover;
   width: 100%;
   padding-bottom: 16rem; }
-  .big-tile h1, .big-tile .h1 {
-    font-weight: 800;
-    line-height: 1;
-    line-height: 1.1;
-    letter-spacing: -0.2rem; }
+  .staff-section .staff-big-tile h2, .staff-section .staff-big-tile .h2 {
+    font-weight: 700; }
+  .staff-section .staff-big-tile p {
+    font-size: 2rem;
+    padding-top: 2rem; }
 
-.small-tile {
-  padding: 12rem 2rem 2rem;
-  border: 1px solid #8E8E8E;
-  background-size: cover;
-  text-align: end; }
-  .small-tile-number {
-    color: #FFFFFF;
-    margin-bottom: 1.6rem; }
-  .small-tile-number, .small-tile p {
-    margin-left: auto;
-    max-width: 20rem; }
-  .small-tile-1 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-68.jpg); }
-  .small-tile-2 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-69.jpg); }
-  .small-tile-3 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-73.jpg);
-    height: 34.4rem; }
-  .small-tile-4 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg); }
+.staff-right {
+  padding: 2rem 0; }
 
-.services-section {
-  padding-top: 0; }
-
-.services-bg img {
-  min-height: 80vh;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  transform: translateX(-2rem); }
-
-.services-content {
-  padding: 4rem 0 6rem; }
-
-.services-grid {
-  margin: 2rem 0; }
-
-.services-tabs {
-  margin-top: 4rem;
-  margin-right: 6.5vw; }
-  .services-tabs ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border-bottom: 1px solid #FFFFFF;
-    padding: 0;
-    overflow-x: scroll;
-    /* Track */ }
-    .services-tabs ul::-webkit-scrollbar {
-      height: 0;
-      width: 0; }
-    .services-tabs ul li a {
-      padding: 1.2rem 2.2rem;
-      color: #8E8E8E;
-      display: block;
-      font-family: Manrope;
-      font-size: 18px;
-      text-decoration: none;
-      white-space: nowrap; }
-      @media (max-width: 61.99em) {
-        .services-tabs ul li a {
-          font-size: 16px; } }
-      .services-tabs ul li a:hover {
-        color: #FFE600;
-        background-color: rgba(255, 230, 0, 0.1); }
-    .services-tabs ul li.ui-tabs-active a {
-      color: #FFFFFF;
-      font-weight: 600;
-      background-color: #2E2E38; }
-
-.service-card {
-  height: 20rem;
+.staff-row {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-  padding: 1rem 1.6rem;
-  margin-top: 2rem; }
-  .service-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center; }
-  .service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
-  .service-card .text {
-    z-index: 5; }
+  gap: 2.8rem;
+  margin-top: 1.6rem; }
 
-.contact-section {
-  padding-left: 6.5vw;
-  padding-right: 3vw; }
+.staff-block {
+  padding: 2rem 0 2rem 3rem; }
+  .staff-block:not(:last-child) {
+    border-bottom: 1px solid #8E8E8E; }
 
-.hero-section {
-  width: 100%;
-  padding-top: 14rem;
-  min-height: 100vh;
-  background-image: url(../../assets/img/hero-section-bg.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  padding-bottom: 4rem; }
+.staff-box {
+  padding-bottom: 2.5rem; }
+  .staff-box h1, .staff-box .h1 {
+    margin-bottom: 1rem;
+    line-height: 1; }
 
-.head-top h1, .head-top .h1 {
-  font-weight: 600;
-  max-width: 40rem; }
-
-.testimonial-herosection {
-  border-top: 1px solid #FFE600;
-  padding-top: 3rem;
-  margin-top: 3rem; }
-
-.testimonial-block {
-  display: flex; }
-
-.testimonial-img {
-  margin-right: 2rem;
-  min-width: 6rem;
-  min-height: 6rem;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%; }
-
-.offer {
-  margin-top: 6rem; }
-  .offer .option {
-    width: 16rem; }
-    .offer .option-img {
-      min-width: 8rem;
-      min-height: 8rem;
-      width: 8rem;
-      height: 8rem;
+.journey-tabs ul {
+  gap: 12rem; }
+  .journey-tabs ul li {
+    position: relative; }
+    .journey-tabs ul li a {
+      padding: 1.2rem 3.2rem;
+      background-color: #F6F6F6;
+      color: #000000; }
+    .journey-tabs ul li.ui-tabs-active a {
+      font-weight: 700;
+      background-color: #FFE600; }
+    .journey-tabs ul li:not(:last-child)::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 12rem;
+      right: 0;
+      top: 50%;
+      background-color: #F9E000;
+      transform: translate(100%, -50%); }
+    .journey-tabs ul li:not(:last-child)::after {
+      position: absolute;
+      content: "";
+      min-width: 1rem;
+      min-height: 1rem;
+      width: 1rem;
+      height: 1rem;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #FFE600;
-      margin-bottom: 1.5rem; }
-      .offer .option-img img {
-        width: 50%;
-        height: auto; }
+      right: -6rem;
+      top: 50%;
+      background-color: #F9E000;
+      transform: translate(50%, -50%); }
 
-.client-row {
-  display: flex;
-  justify-content: space-around; }
-  .client-row:not(:last-child) {
-    margin-bottom: 5rem; }
-  .client-row .client-image {
-    width: 12rem; }
-
-.big-tile {
-  position: relative;
-  padding: 4rem;
-  border: 5px solid #FFE600;
-  background-image: url(../../assets/img/Rectangle-57.jpg);
-  background-size: cover;
-  width: 100%;
-  padding-bottom: 16rem; }
-  .big-tile h1, .big-tile .h1 {
-    font-weight: 800;
-    line-height: 1;
-    line-height: 1.1;
-    letter-spacing: -0.2rem; }
-
-.small-tile {
-  padding: 12rem 2rem 2rem;
-  border: 1px solid #8E8E8E;
-  background-size: cover;
-  text-align: end; }
-  .small-tile-number {
-    color: #FFFFFF;
-    margin-bottom: 1.6rem; }
-  .small-tile-number, .small-tile p {
-    margin-left: auto;
-    max-width: 20rem; }
-  .small-tile-1 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-68.jpg); }
-  .small-tile-2 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-69.jpg); }
-  .small-tile-3 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-73.jpg);
-    height: 34.4rem; }
-  .small-tile-4 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg); }
-
-.services-section {
-  padding-top: 0; }
-
-.services-bg img {
-  min-height: 80vh;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  transform: translateX(-2rem); }
-
-.services-content {
-  padding: 4rem 0 6rem; }
-
-.services-grid {
-  margin: 2rem 0; }
-
-.services-tabs {
-  margin-top: 4rem;
-  margin-right: 6.5vw; }
-  .services-tabs ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border-bottom: 1px solid #FFFFFF;
-    padding: 0;
-    overflow-x: scroll;
-    /* Track */ }
-    .services-tabs ul::-webkit-scrollbar {
-      height: 0;
-      width: 0; }
-    .services-tabs ul li a {
-      padding: 1.2rem 2.2rem;
-      color: #8E8E8E;
-      display: block;
-      font-family: Manrope;
-      font-size: 18px;
-      text-decoration: none;
-      white-space: nowrap; }
-      @media (max-width: 61.99em) {
-        .services-tabs ul li a {
-          font-size: 16px; } }
-      .services-tabs ul li a:hover {
-        color: #FFE600;
-        background-color: rgba(255, 230, 0, 0.1); }
-    .services-tabs ul li.ui-tabs-active a {
-      color: #FFFFFF;
-      font-weight: 600;
-      background-color: #2E2E38; }
-
-.service-card {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-  padding: 1rem 1.6rem;
-  margin-top: 2rem; }
-  .service-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center; }
-  .service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
-  .service-card .text {
-    z-index: 5; }
-
-.contact-section {
-  padding-left: 6.5vw;
-  padding-right: 3vw; }
-
-.hero-section {
-  width: 100%;
-  padding-top: 14rem;
-  min-height: 100vh;
-  background-image: url(../../assets/img/hero-section-bg.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  padding-bottom: 4rem; }
-
-.head-top h1, .head-top .h1 {
-  font-weight: 600;
-  max-width: 40rem; }
-
-.testimonial-herosection {
-  border-top: 1px solid #FFE600;
-  padding-top: 3rem;
-  margin-top: 3rem; }
-
-.testimonial-block {
-  display: flex; }
-
-.testimonial-img {
-  margin-right: 2rem;
-  min-width: 6rem;
-  min-height: 6rem;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%; }
-
-.offer {
-  margin-top: 6rem; }
-  .offer .option {
-    width: 16rem; }
-    .offer .option-img {
-      min-width: 8rem;
-      min-height: 8rem;
-      width: 8rem;
-      height: 8rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #FFE600;
-      margin-bottom: 1.5rem; }
-      .offer .option-img img {
-        width: 50%;
-        height: auto; }
-
-.client-row {
-  display: flex;
-  justify-content: space-around; }
-  .client-row:not(:last-child) {
-    margin-bottom: 5rem; }
-  .client-row .client-image {
-    width: 12rem; }
-
-.big-tile {
-  position: relative;
-  padding: 4rem;
-  border: 5px solid #FFE600;
-  background-image: url(../../assets/img/Rectangle-57.jpg);
-  background-size: cover;
-  width: 100%;
-  padding-bottom: 16rem; }
-  .big-tile h1, .big-tile .h1 {
-    font-weight: 800;
-    line-height: 1;
-    line-height: 1.1;
-    letter-spacing: -0.2rem; }
-
-.small-tile {
-  padding: 12rem 2rem 2rem;
-  border: 1px solid #8E8E8E;
-  background-size: cover;
-  text-align: end; }
-  .small-tile-number {
-    color: #FFFFFF;
-    margin-bottom: 1.6rem; }
-  .small-tile-number, .small-tile p {
-    margin-left: auto;
-    max-width: 20rem; }
-  .small-tile-1 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-68.jpg); }
-  .small-tile-2 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-69.jpg); }
-  .small-tile-3 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-73.jpg);
-    height: 34.4rem; }
-  .small-tile-4 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg); }
-
-.services-section {
-  padding-top: 0; }
-
-.services-bg img {
-  min-height: 80vh;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  transform: translateX(-2rem); }
-
-.services-content {
-  padding: 4rem 0 6rem; }
-
-.services-grid {
-  margin: 2rem 0; }
-
-.services-tabs {
-  margin-top: 4rem;
-  margin-right: 6.5vw; }
-  .services-tabs ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border-bottom: 1px solid #FFFFFF;
-    padding: 0;
-    overflow-x: scroll;
-    /* Track */ }
-    .services-tabs ul::-webkit-scrollbar {
-      height: 0;
-      width: 0; }
-    .services-tabs ul li a {
-      padding: 1.2rem 2.2rem;
-      color: #8E8E8E;
-      display: block;
-      font-family: Manrope;
-      font-size: 18px;
-      text-decoration: none;
-      white-space: nowrap; }
-      @media (max-width: 61.99em) {
-        .services-tabs ul li a {
-          font-size: 16px; } }
-      .services-tabs ul li a:hover {
-        color: #FFE600;
-        background-color: rgba(255, 230, 0, 0.1); }
-    .services-tabs ul li.ui-tabs-active a {
-      color: #FFFFFF;
-      font-weight: 600;
-      background-color: #2E2E38; }
-
-.service-card {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-  padding: 1rem 1.6rem;
-  margin-top: 2rem; }
-  .service-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center; }
-  .service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
-  .service-card .text {
-    z-index: 5; }
-
-.contact-section {
-  padding-left: 6.5vw;
-  padding-right: 3vw; }
-
-.hero-section {
-  width: 100%;
-  padding-top: 14rem;
-  min-height: 100vh;
-  background-image: url(../../assets/img/hero-section-bg.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  padding-bottom: 4rem; }
-
-.head-top h1, .head-top .h1 {
-  font-weight: 600;
-  max-width: 40rem; }
-
-.testimonial-herosection {
-  border-top: 1px solid #FFE600;
-  padding-top: 3rem;
-  margin-top: 3rem; }
-
-.testimonial-block {
-  display: flex; }
-
-.testimonial-img {
-  margin-right: 2rem;
-  min-width: 6rem;
-  min-height: 6rem;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%; }
-
-.offer {
-  margin-top: 6rem; }
-  .offer .option {
-    width: 16rem; }
-    .offer .option-img {
-      min-width: 8rem;
-      min-height: 8rem;
-      width: 8rem;
-      height: 8rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #FFE600;
-      margin-bottom: 1.5rem; }
-      .offer .option-img img {
-        width: 50%;
-        height: auto; }
-
-.client-row {
-  display: flex;
-  justify-content: space-around; }
-  .client-row:not(:last-child) {
-    margin-bottom: 5rem; }
-  .client-row .client-image {
-    width: 12rem; }
-
-.big-tile {
-  position: relative;
-  padding: 4rem;
-  border: 5px solid #FFE600;
-  background-image: url(../../assets/img/Rectangle-57.jpg);
-  background-size: cover;
-  width: 100%;
-  padding-bottom: 16rem; }
-  .big-tile h1, .big-tile .h1 {
-    font-weight: 800;
-    line-height: 1;
-    line-height: 1.1;
-    letter-spacing: -0.2rem; }
-
-.small-tile {
-  padding: 12rem 2rem 2rem;
-  border: 1px solid #8E8E8E;
-  background-size: cover;
-  text-align: end; }
-  .small-tile-number {
-    color: #FFFFFF;
-    margin-bottom: 1.6rem; }
-  .small-tile-number, .small-tile p {
-    margin-left: auto;
-    max-width: 20rem; }
-  .small-tile-1 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-68.jpg); }
-  .small-tile-2 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-69.jpg); }
-  .small-tile-3 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-73.jpg);
-    height: 34.4rem; }
-  .small-tile-4 {
-    background-image: linear-gradient(111.47deg, rgba(0, 0, 0, 0.43) 0%, #000000 100%), url(../../assets/img/Rectangle-71.jpg); }
-
-.services-section {
-  padding-top: 0; }
-
-.services-bg img {
-  min-height: 80vh;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  width: 100%;
-  transform: translateX(-2rem); }
-
-.services-content {
-  padding: 4rem 0 6rem; }
-
-.services-grid {
-  margin: 2rem 0; }
-
-.services-tabs {
-  margin-top: 4rem;
-  margin-right: 6.5vw; }
-  .services-tabs ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    border-bottom: 1px solid #FFFFFF;
-    padding: 0;
-    overflow-x: scroll;
-    /* Track */ }
-    .services-tabs ul::-webkit-scrollbar {
-      height: 0;
-      width: 0; }
-    .services-tabs ul li a {
-      padding: 1.2rem 2.2rem;
-      color: #8E8E8E;
-      display: block;
-      font-family: Manrope;
-      font-size: 18px;
-      text-decoration: none;
-      white-space: nowrap; }
-      @media (max-width: 61.99em) {
-        .services-tabs ul li a {
-          font-size: 16px; } }
-      .services-tabs ul li a:hover {
-        color: #FFE600;
-        background-color: rgba(255, 230, 0, 0.1); }
-    .services-tabs ul li.ui-tabs-active a {
-      color: #FFFFFF;
-      font-weight: 600;
-      background-color: #2E2E38; }
-
-.service-card {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-  padding: 1rem 1.6rem;
-  margin-top: 2rem; }
-  .service-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center; }
-  .service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
-  .service-card .text {
-    z-index: 5; }
-
-.contact-section {
-  padding-left: 6.5vw;
-  padding-right: 3vw; }
+.journey-tabs .content {
+  padding-top: 3rem; }
+  .journey-tabs .content p {
+    margin-top: 3rem;
+    color: #000000; }

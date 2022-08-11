@@ -1,0 +1,19 @@
+.offer {
+    margin-top: 6rem;
+  
+    .option {
+      width: 16rem;
+  
+      &-img {
+        @include circle(8rem);
+        @include flex-center;
+        border: 1.5px solid $secondary-light;
+        margin-bottom: 1.5rem;
+  
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
