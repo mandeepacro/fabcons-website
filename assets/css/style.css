@@ -4845,7 +4845,7 @@ button {
   padding-right: 3vw; }
 
 .hero-about-section {
-  background-image: url(/assets/img/aboutus-bg.jpg);
+  background-image: url(../../assets/img/aboutus-bg.jpg);
   background-position: top; }
 
 .hero-about-section-top {
@@ -4900,7 +4900,7 @@ button {
   padding: 3rem 3rem; }
 
 .why-choose-us-box {
-  background-image: url(/assets/img/wcu-bg.jpg);
+  background-image: url(../../assets/img/wcu-bg.jpg);
   width: 100%;
   background-size: cover;
   background-position: bottom center;
