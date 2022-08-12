@@ -4749,8 +4749,7 @@ button {
   width: 100%;
   padding-top: 14rem;
   background-size: cover;
-  background-position: bottom center;
-  margin-bottom: 1rem; }
+  background-position: bottom center; }
 
 .top-section-index {
   background-image: url(../../assets/img/hero-section-bg.jpg); }
@@ -5056,3 +5055,35 @@ button {
     .contact-us .contact-address .address-info {
       width: 72%;
       margin-left: 2rem; }
+
+.log-in {
+  padding-bottom: 9rem;
+  position: relative; }
+  .log-in::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../assets/img/icons/top-right.svg);
+    height: 11rem;
+    width: 11rem;
+    background-size: cover;
+    top: 3rem;
+    right: 80rem;
+    opacity: 95%; }
+  .log-in .log-in-image {
+    background-size: cover;
+    width: 76.7rem;
+    height: 30rem; }
+  .log-in .log-in-content {
+    padding: 7rem 3rem;
+    text-align: end;
+    position: relative; }
+    .log-in .log-in-content::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/icons/right-top.svg);
+      height: 11rem;
+      width: 11rem;
+      background-size: cover;
+      top: 0.5rem;
+      right: 0.5rem;
+      opacity: 95%; }
