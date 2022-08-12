@@ -4609,6 +4609,34 @@ button {
   .tabs ul li.ui-tabs-active a {
     font-weight: 600; }
 
+.gradient-img-card {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  padding: 1rem 1.6rem;
+  margin-top: 2rem; }
+  .gradient-img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+  .gradient-img-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
+  .gradient-img-card .text {
+    z-index: 5; }
+
 .nav-header {
   width: 100%;
   position: fixed;
@@ -4814,34 +4842,6 @@ button {
     .services-tabs ul li.ui-tabs-active a {
       color: #FFFFFF;
       background-color: #2E2E38; }
-
-.service-card {
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  position: relative;
-  padding: 1rem 1.6rem;
-  margin-top: 2rem; }
-  .service-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center; }
-  .service-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
-  .service-card .text {
-    z-index: 5; }
 
 .contact-section {
   padding-left: 6.5vw;
