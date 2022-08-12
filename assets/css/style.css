@@ -4357,6 +4357,9 @@ button {
   .btn-outline:active {
     transform: translateY(0); }
 
+.form-group {
+  padding: 6rem 3rem; }
+
 .form-label {
   display: block;
   font-family: Manrope;
@@ -4372,8 +4375,8 @@ button {
   font-size: 1.5rem;
   width: 100%;
   color: #FFFFFF;
-  padding-bottom: 4px;
-  border-bottom: 4px solid rgba(255, 230, 0, 0.3);
+  padding-bottom: 3px;
+  border-bottom: 3px solid rgba(255, 230, 0, 0.3);
   transition: all 0.25s ease-in-out;
   transform-origin: left; }
   .form-input:focus {
@@ -4711,7 +4714,7 @@ button {
   padding-top: 14rem;
   background-size: cover;
   background-position: bottom center;
-  padding-bottom: 4rem; }
+  margin-bottom: 1rem; }
 
 .top-section-index {
   background-image: url(../../assets/img/hero-section-bg.jpg); }
@@ -4999,3 +5002,46 @@ button {
   .journey-tabs .content p {
     margin-top: 3rem;
     color: #000000; }
+
+.hero-contact-section {
+  background-image: url(../../assets/img/contact-bg.jpg);
+  background-position: top;
+  background-size: cover; }
+
+.hero-contact-section-top {
+  border-bottom: 2px solid #FFE600;
+  margin-bottom: 4rem; }
+  .hero-contact-section-top h4, .hero-contact-section-top .h4 {
+    color: #AEAEAE;
+    padding-top: 5rem; }
+  .hero-contact-section-top h1, .hero-contact-section-top .h1 {
+    padding-bottom: 2rem; }
+
+.contact-us {
+  padding-top: 2rem;
+  padding-left: 6.5vw;
+  padding-right: 7vw;
+  background: transparent; }
+  .contact-us .contact-address {
+    padding-left: 2rem;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 2px solid #8E8E8E; }
+    .contact-us .contact-address .address-logo {
+      min-width: 8rem;
+      min-height: 8rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 3px solid #8E8E8E;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contact-us .contact-address .address-logo .contact-logo {
+        width: 4rem; }
+    .contact-us .contact-address .address-info {
+      width: 72%;
+      margin-left: 2rem; }

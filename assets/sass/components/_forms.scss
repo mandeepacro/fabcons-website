@@ -1,3 +1,7 @@
+.form-group{
+    padding: 6rem 3rem;
+}
+
 .form-label{
     display: block;
     font-family: Manrope;
@@ -14,8 +18,8 @@
     font-size: 1.5rem;
     width: 100%;
     color: $color-white;
-    padding-bottom: 4px;
-    border-bottom: 4px solid rgba( $secondary-light,0.3);
+    padding-bottom: 3px;
+    border-bottom: 3px solid rgba( $secondary-light,0.3);
     transition: $transition-primary;
     transform-origin: left;
 

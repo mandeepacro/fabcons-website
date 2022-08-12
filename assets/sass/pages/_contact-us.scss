@@ -1,0 +1,55 @@
+.hero-contact-section {
+    background-image: url(../../assets/img/contact-bg.jpg);
+    background-position: top;
+    background-size: cover;
+  }
+  
+  .hero-contact-section-top {
+    border-bottom: 2px solid $secondary-light ;
+    margin-bottom: 4rem;  
+
+    h4{
+        color: #AEAEAE;
+           padding-top: 5rem;
+       }
+
+     h1{
+        padding-bottom: 2rem;   
+    }
+  }
+  
+  .contact-us{
+    padding-top: 2rem;
+    padding-left:6.5vw;
+    padding-right: 7vw;
+    background: transparent;
+
+  .contact-address{
+    padding-left: 2rem;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    border-bottom: 2px solid $text-grey;
+
+    .address-logo{
+        @include circle(8rem);
+        border: 3px solid $text-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        .contact-logo{
+            width: 4rem;
+        }
+    }
+
+    .address-info{
+        width: 72%;
+        margin-left: 2rem;
+    }
+  } 
+}
+
+ 
