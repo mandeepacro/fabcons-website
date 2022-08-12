@@ -4357,9 +4357,6 @@ button {
   .btn-outline:active {
     transform: translateY(0); }
 
-.form-group {
-  padding: 6rem 3rem; }
-
 .form-label {
   display: block;
   font-family: Manrope;
@@ -4665,6 +4662,17 @@ button {
     .nav-header .nav-link:hover {
       color: #FFE600;
       border-color: #FFE600; }
+      .nav-header .nav-link:hover .nav-dropdown {
+        top: 100%;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        display: block; }
+
+.nav-dropdown {
+  padding: 4rem 0;
+  display: none;
+  background-color: #25252D; }
 
 .footer {
   padding: 5rem 0rem;
@@ -4767,13 +4775,16 @@ button {
   height: 6rem;
   border-radius: 50%; }
 
+.client-profiles-section {
+  padding-left: 3rem; }
+
 .client-row {
   display: flex;
   justify-content: space-around; }
   .client-row:not(:last-child) {
     margin-bottom: 5rem; }
   .client-row .client-image {
-    width: 12rem; }
+    height: 4rem; }
 
 .big-tile {
   position: relative;

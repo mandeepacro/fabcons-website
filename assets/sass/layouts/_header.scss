@@ -36,6 +36,20 @@
     &:hover {
       color: $secondary-light;
       border-color: $secondary-light;
+
+      .nav-dropdown{
+        top: 100%;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        display: block;
+      }
     }
   }
+}
+
+.nav-dropdown{
+  padding: 4rem 0;
+  display: none;
+  background-color: $grey-dark;
 }

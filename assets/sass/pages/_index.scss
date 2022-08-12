@@ -24,7 +24,9 @@
     @include circle(6rem);
   }
 }
-
+.client-profiles-section{
+  padding-left: 3rem;
+}
 .client-row {
   display: flex;
   justify-content: space-around;
@@ -33,7 +35,7 @@
   }
 
   .client-image {
-    width: 12rem;
+    height: 4rem;
   }
 }
 
