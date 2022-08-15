@@ -1,0 +1,54 @@
+.hero-career-detail-section{
+    background-image: url(/assets/img/career-detail.jpg);
+    background-position: top;
+    background-size: cover;
+  
+  .hero-career-detail-section-content {
+    margin-bottom: 10rem;  
+
+    p{
+        font-size: 2.05rem;
+        color: #ADADAD;
+        padding-bottom: 0.5rem;
+    } 
+  } 
+}
+
+    .roles{
+        border: 3px solid #c5c5c5;
+        padding-bottom: 8rem;
+        }
+        
+        .duties{
+            border-bottom: 3px solid #c5c5c5;
+            padding: 4rem 0rem;
+
+            p{
+                font-size: 1.8rem; 
+                padding-bottom: 1rem;
+            }
+        }
+
+        .apply{
+            display: flex;
+            padding: 14rem 6rem;
+        }
+
+    .experience{
+        padding: 1rem 0rem;
+        border-bottom: 3px solid #c5c5c5;
+        margin-bottom: 4rem;
+        
+        h3{
+            padding-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-size: 1.8rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            margin-top: -1rem;
+            color: #787878;
+        }
+    }

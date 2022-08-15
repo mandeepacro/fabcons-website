@@ -21,6 +21,7 @@
 @import "../vendors/bootstrap/scss/images";
 @import "../vendors/bootstrap/scss/containers";
 @import "../vendors/bootstrap/scss/grid";
+@import "../vendors/bootstrap/scss/dropdown";
 //@import "/../vendors/bootstrap/scss/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -59,3 +60,4 @@
 @import "pages/services";
 @import "pages/contact-us";
 @import "pages/resources";
+@import "pages/career-detail";

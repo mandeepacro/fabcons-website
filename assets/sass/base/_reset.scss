@@ -37,6 +37,10 @@ a{
 
 section{
     padding: 7.2rem 0;
+
+    @include res(sm){
+        padding: 5.4rem 0;
+    }
 }
 
 

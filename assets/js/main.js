@@ -18,14 +18,33 @@ feather.replace();
       $(".owl-carousel-industry").owlCarousel({
         loop:false,
         margin:0,
-        items:4,
         nav:true,
         dots:false,
         autoplay:false,
+        stagePadding:0,
         navElement:'div',
         navText: [
           `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline" style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/left-white.svg" /></button>`,
           `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/right-white.svg" /> </button>`],
+          responsiveClass:true,
+    responsive:{
+        0:{
+          items:1,
+          stagePadding:45
+        },
+        600:{
+          items:2,
+          stagePadding:45
+        },
+        700:{
+            items:3
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
       });
 
       $(".owl-carousel-testimonial").owlCarousel({
@@ -55,3 +74,44 @@ feather.replace();
     initializeOwlCarousel();
     $( "#serviceTabs" ).tabs();
   });
+
+  $('.nav-link-dropdown').on('click', function (event) {
+
+    $('.nav-dropdown-menu').removeClass('show');
+    $(".nav-link-dropdown").removeClass('active');
+
+    console.log("remove all classes");
+    if($(this).next(".nav-dropdown-menu").hasClass("show")){
+      $(this).next(".nav-dropdown-menu").removeClass('show');
+      $(this).removeClass('active');
+     
+    }
+    else{
+      $(this).next(".nav-dropdown-menu").addClass('show');
+      $(this).addClass('active');
+    }
+    event.stopPropagation();
+    
+});  
+
+$('.nav-dropdown-menu-close').on('click', function (event) {
+  $(this).parent(".nav-dropdown-menu").removeClass('show');
+  $(this).parent().prev(".nav-link-dropdown").removeClass('active');
+});  
+
+$('body').on('click', function (e) {
+  if ((!$('.nav-dropdown-menu').is(e.target) && !$('.nav-link-dropdown').is(e.target) )
+      && $('.nav-dropdown-menu').has(e.target).length === 0 
+      && $('.show').has(e.target).length === 0
+  ) {
+      $('.nav-dropdown-menu').removeClass('show');
+      $(".nav-link-dropdown").removeClass('active');
+  }
+});    
+
+
+$('.hamburger').on("click",function() {
+  $( this ).toggleClass( "active" );
+  $(".nav-header .nav-menu").toggleClass("open");
+ 
+});

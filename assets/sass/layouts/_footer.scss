@@ -4,7 +4,7 @@
 
 
   &-top {
-    align-items: center;
+    //align-items: center;
     padding-bottom: 1.5rem;
     border-bottom: 1.5px solid $secondary-light;
   }
@@ -20,11 +20,17 @@
     align-items: center;
     display: flex;
     justify-content: end;
+    gap:4rem;
+
+    @include res(md){
+      margin-top: 2rem;
+      justify-content: start;
+    }
   }
 
   &-bottom {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     padding: 2rem 0rem;
   }
 
@@ -37,6 +43,13 @@
     p {
       margin-bottom: 0.6rem;
     }
+  }
+
+  &-link-left{
+    @include res(md){
+      margin-bottom: 3rem;
+    }
+    
   }
 
   &-link-right {

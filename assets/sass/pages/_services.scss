@@ -1,0 +1,25 @@
+.hero-services-section {
+    background-image: url(../../assets/img/services-bg.jpg);
+    background-position: top;
+  }
+  
+  .hero-services-section-content {
+    padding-bottom: 20rem;
+    position: relative;
+    
+    h1{
+        border-bottom: 2px solid $secondary-light;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/img/icons/Group-245.svg);
+        height: 15rem;
+        width: 15rem;
+        background-size: cover;
+        top: 20rem;
+        right: -10rem;
+        opacity: 90%;
+    }
+  }
