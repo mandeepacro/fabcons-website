@@ -33,3 +33,13 @@
 .text-border-grey{
     color: $border-grey;
 }
+
+.tag{
+    background-color: $secondary-light;
+    padding: 0.4rem 1rem;
+    font-weight: 700;
+    @include small-fs;
+    color: $text-dark;
+    font-family: Manrope;
+    display: inline-block;
+}

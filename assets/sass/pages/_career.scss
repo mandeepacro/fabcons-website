@@ -1,0 +1,82 @@
+.hero-career-section{
+    background-image: url(../../assets/img/career-bg.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto 100% ;
+  
+    .hero-career-section-content{
+        p{
+            padding-bottom: 2rem;
+            border-bottom: 2px solid $secondary-hover;
+        }
+    }
+  }
+
+    .work-with-us {
+   
+    .work-with-us-content{
+      width: 85%;
+
+      @include res(sm){
+        max-width: 100%;
+        margin-bottom: 2rem
+      }
+  
+      &-img {
+        @include circle(8rem);
+        @include flex-center;
+        border: 1.5px solid $secondary-light;
+        margin-bottom: 1.5rem;
+  
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .employee { 
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.73) 0%, 
+        rgba(255, 255, 255, 0.8) 100%), url(/assets/img/employee-bg.jpg);
+        background-position: bottom;
+        background-size: cover;
+        margin: 6rem 0rem;
+   
+    .employee-body{
+        display: flex;
+        }
+
+    .employee-content{
+      width: 100%;
+      text-align: center;
+
+      @include res(sm){
+        max-width: 100%;
+        margin-bottom: 2rem
+      }
+  
+      &-img {
+        @include circle(8rem);
+        @include flex-center;
+        margin-bottom: 1.5rem;
+        border: 2px solid $secondary-light;
+        margin-left: 8.5rem;
+  
+        img {
+          width: 50%;
+          height: auto;
+                }
+            }
+        }
+    }
+
+    .client-profile-box-top{
+      padding-bottom: 2rem;
+      border-bottom: 2px solid $secondary-light;
+
+      .btn{
+        margin-left: 0.5rem ;
+      }
+    
+    }

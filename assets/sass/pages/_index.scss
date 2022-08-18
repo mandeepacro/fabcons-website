@@ -135,7 +135,7 @@
   }
   &-bg {
     img {
-      min-height: 80vh;
+      min-height: 100vh;
       height: 100%;
       object-fit: cover;
       object-position: top;
@@ -191,6 +191,9 @@
 
 .client-profiles-section{
   padding-left: 3vw;
+  @include res(sm){
+    padding-left:0;
+  }
 }
 // .contact-section-grid{
  
@@ -198,4 +201,9 @@
 .contact-section{
   padding-left:6.5vw;
   padding-right:3vw;
+
+  @include res(sm){
+    padding-left:0;
+    padding-right:0;
+  }
   }

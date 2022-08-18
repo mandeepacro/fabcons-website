@@ -1,0 +1,27 @@
+.hero-blog-post-section{
+    background-image: url(/assets/img/blog-post-bg.jpg);
+    background-position: top;
+    padding-bottom: 8rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(/assets/img/icons/Group-248.svg);
+        height: 9rem;
+        width: 9rem;
+        background-size: cover;
+        top: 33rem;
+        right: 140rem;
+        opacity: 90%;
+      }
+
+      h2{
+        border-bottom: 2px solid $secondary-light;
+    }
+      
+    .hero-blog-post-section-content{
+        padding-top: 5rem;
+    }
+
+    }
