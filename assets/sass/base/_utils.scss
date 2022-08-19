@@ -10,6 +10,10 @@
     background-color: $color-grey;
 }
 
+.bg-light-grey{
+    background-color: $grey-bg;
+}
+
 .bg-darker{
     background-color: $grey-dark;
 }
@@ -24,6 +28,10 @@
 
 .text-light-blue{
     color: $primary-color-medium;
+}
+
+.text-dark-blue{
+    color: $primary-blue-dark;
 }
 
 .text-center{
