@@ -27,7 +27,7 @@
         &::before {
           content: "";
           position: absolute;
-          background-image: url(../../assets/img/icons/Group-245.svg);
+          background-image: url(../assets/img/icons/Group-245.svg);
           height: 10rem;
           width: 10rem;
           background-size: cover;
@@ -49,7 +49,7 @@
   .process-snapshot-img{
 
       &-1{
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-25.png);
+      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(../../assets/img/Rectangle-25.png);
       background-size: 21.5rem 30.9rem;
       display: flex;
       align-items: flex-end;

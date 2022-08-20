@@ -5856,7 +5856,7 @@ button, .btn, a.btn {
     .hero-process-snapshot-section .hero-process-snapshot-content::before {
       content: "";
       position: absolute;
-      background-image: url(../../assets/img/icons/Group-245.svg);
+      background-image: url(../assets/img/icons/Group-245.svg);
       height: 10rem;
       width: 10rem;
       background-size: cover;
@@ -5870,7 +5870,7 @@ button, .btn, a.btn {
     margin-bottom: 3rem;
     display: flex; }
     .process-snapshot-list .process-snapshot-box .process-snapshot-img-1 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-25.png);
+      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(../../assets/img/Rectangle-25.png);
       background-size: 21.5rem 30.9rem;
       display: flex;
       align-items: flex-end;
@@ -5985,3 +5985,7 @@ button, .btn, a.btn {
       margin-bottom: 1rem; }
       .our-services .service-type .service-type-logo .service-type-img {
         width: 3rem; }
+
+.hero-process-detail {
+  background: url(../../img/process-detail-bg.jpg);
+  background-position: top; }
