@@ -6009,5 +6009,42 @@ button, .btn, a.btn {
         width: 3rem; }
 
 .hero-process-detail {
-  background: url(../../img/process-detail-bg.jpg);
-  background-position: top; }
+  background: url(/assets/img/process-detail-bg.jpg);
+  background-position: top;
+  position: relative; }
+  .hero-process-detail h2, .hero-process-detail .h2 {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #FFE600; }
+  .hero-process-detail .overview {
+    padding-top: 8rem; }
+    .hero-process-detail .overview::before {
+      position: absolute;
+      content: "";
+      background-image: url(/assets/img/icons/top-left.svg);
+      height: 10rem;
+      width: 10rem;
+      background-size: cover;
+      top: 36.5rem;
+      right: 137.5rem;
+      opacity: 90%; }
+
+.activity {
+  position: relative; }
+  .activity .serial-no {
+    display: flex;
+    align-items: baseline; }
+  .activity .activity-right {
+    position: relative; }
+    .activity .activity-right::before {
+      position: absolute;
+      content: "";
+      background-image: url(/assets/img/icons/Group-288.svg);
+      height: 6rem;
+      width: 6rem;
+      background-size: contain;
+      bottom: 0;
+      right: 0;
+      transform: translate(10px, 10px); }
+    .activity .activity-right .activity-right-img {
+      border: 1px solid #d9d9d9;
+      width: 100%; }
