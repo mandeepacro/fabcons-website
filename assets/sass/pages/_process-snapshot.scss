@@ -1,0 +1,130 @@
+.hero-process-snapshot-section{
+    background-image: url(/assets/img/process-snapshot-bg.jpg);
+    background-position: top;
+    padding-bottom: 8rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../assets/img/icons/top-left.svg);
+        height: 10rem;
+        width: 10rem;
+        background-size: cover;
+        top: 28rem;
+        right: 136rem;
+        opacity: 90%;
+      }
+
+      h2{
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $secondary-light;
+      }
+
+      .hero-process-snapshot-content{
+        padding-top: 10rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url(../../assets/img/icons/Group-245.svg);
+          height: 10rem;
+          width: 10rem;
+          background-size: cover;
+          top: 47rem;
+          right: 1rem;
+          opacity: 90%;
+        }
+      }
+}
+
+
+.process-snapshot-list{
+  margin-right: 2rem;
+
+.process-snapshot-box{
+  margin-bottom: 3rem;
+  display: flex;
+
+  .process-snapshot-img{
+
+      &-1{
+      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-25.png);
+      background-size: 21.5rem 30.9rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      width: 35%;
+      }
+
+      &-2{
+        background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-30.png);
+        background-size: 21.5rem 30.9rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        width: 35%;
+      }
+
+      &-3{
+        background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-35.png);
+        background-size: 21.5rem 30.9rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        width: 35%;
+      }
+
+      &-4{
+        background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-40.png);
+        background-size: 21.5rem 30.9rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        width: 35%;
+      }
+
+      &-5{
+        background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-45.png);
+        background-size: 21.5rem 30.9rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        width: 35%;
+      }
+
+      &-6{
+        background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-50.png);
+        background-size: 21.5rem 30.9rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        width: 35%;
+      }
+
+      &-7{
+        background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-55.png);
+        background-size: 21.5rem 30.9rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        width: 35%;
+      }
+
+
+
+    }
+     
+  }
+
+  .process-snapshot-content{
+    padding: 2rem 2rem;
+      width: 70%;
+
+      p{
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $secondary-hover;
+      }
+  }
+  
+}

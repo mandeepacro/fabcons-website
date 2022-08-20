@@ -10,23 +10,20 @@
     }
   
     &-row {
-      display: flex;
-      justify-content: space-around;
-  
+     display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(23rem, 1fr));
       border-top: 1px solid $border-grey-light;
-      border-bottom: 1px solid $border-grey-light;
-      &:last-child {
-        border-top: none;
+
+      @include res(sm){
+        grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
       }
     }
     &-block {
       padding: 5rem 0;
       display: flex;
+      border: 1px inset $border-grey-light;
       justify-content: center;
       align-items: center;
       width: 100%;
-      &:not(:last-child) {
-        border-right: 1px solid $border-grey-light;
-      }
     }
   }

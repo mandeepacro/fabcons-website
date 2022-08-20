@@ -10,6 +10,10 @@
     background-color: $color-grey;
 }
 
+.bg-light-grey{
+    background-color: $grey-bg;
+}
+
 .bg-darker{
     background-color: $grey-dark;
 }
@@ -26,10 +30,24 @@
     color: $primary-color-medium;
 }
 
+.text-dark-blue{
+    color: $primary-blue-dark;
+}
+
 .text-center{
     text-align: center;
 }
 
 .text-border-grey{
     color: $border-grey;
+}
+
+.tag{
+    background-color: $secondary-light;
+    padding: 0.4rem 1rem;
+    font-weight: 700;
+    @include small-fs;
+    color: $text-dark;
+    font-family: Manrope;
+    display: inline-block;
 }
