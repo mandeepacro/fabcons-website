@@ -4452,12 +4452,12 @@ h4, .h4 {
 
 h5, .h5,
 .h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem; }
 
 h6, .h6,
 .h6 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 0.8rem; }
 
@@ -5772,6 +5772,15 @@ button, .btn, a.btn {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: auto 100%; }
+  .hero-career-section .about-text {
+    margin: 3rem 0; }
+  @media (max-width: 61.99em) {
+    .hero-career-section {
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .hero-career-section .about-text {
+        margin-top: 16rem; } }
   .hero-career-section .hero-career-section-content p {
     padding-bottom: 2rem;
     border-bottom: 2px solid rgba(255, 230, 0, 0.1); }
@@ -5780,7 +5789,7 @@ button, .btn, a.btn {
   width: 85%; }
   @media (max-width: 47.99em) {
     .work-with-us .work-with-us-content {
-      max-width: 100%;
+      width: 100%;
       margin-bottom: 2rem; } }
   .work-with-us .work-with-us-content-img {
     min-width: 8rem;
@@ -5796,18 +5805,24 @@ button, .btn, a.btn {
     .work-with-us .work-with-us-content-img img {
       width: 50%;
       height: auto; }
+  .work-with-us .work-with-us-content p {
+    line-height: 2;
+    margin-top: 1rem; }
 
 .employee {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.73) 0%, rgba(255, 255, 255, 0.8) 100%), url(/assets/img/employee-bg.jpg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.94) 100%), url(/assets/img/employee-bg.jpg);
   background-position: bottom;
-  background-size: cover;
-  margin: 6rem 0rem; }
+  background-size: cover; }
   .employee .employee-body {
-    display: flex; }
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr)); }
   .employee .employee-content {
-    width: 100%;
-    text-align: center; }
-    @media (max-width: 47.99em) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 61.99em) {
       .employee .employee-content {
         max-width: 100%;
         margin-bottom: 2rem; } }
@@ -5821,17 +5836,24 @@ button, .btn, a.btn {
       align-items: center;
       justify-content: center;
       margin-bottom: 1.5rem;
-      border: 2px solid #FFE600;
-      margin-left: 8.5rem; }
+      border: 2px solid #FFE600; }
       .employee .employee-content-img img {
         width: 50%;
         height: auto; }
 
-.client-profile-box-top {
-  padding-bottom: 2rem;
-  border-bottom: 2px solid #FFE600; }
-  .client-profile-box-top .btn {
-    margin-left: 0.5rem; }
+.career-card {
+  padding: 1.6rem 3.2rem 1.6rem;
+  margin-top: 2rem; }
+  .career-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    gap: 1rem;
+    border-top: 1px solid #FFE600; }
+    .career-card-bottom h6, .career-card-bottom .h6 {
+      margin-bottom: 0; }
 
 .hero-process-snapshot-section {
   background-image: url(/assets/img/process-snapshot-bg.jpg);
