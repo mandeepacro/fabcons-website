@@ -4465,7 +4465,8 @@ h6, .h6,
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 0.08rem;
-  line-height: 1; }
+  line-height: 1;
+  text-transform: uppercase; }
 
 .title-heading {
   font-size: 4.8rem; }
@@ -4935,6 +4936,16 @@ button, .btn, a.btn {
     background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
   .gradient-img-card .text {
     z-index: 5; }
+    .gradient-img-card .text svg {
+      color: #FFE600;
+      transform: translateY(10%); }
+  .gradient-img-card-alt .text {
+    padding-top: 0.7rem;
+    border-top: 1px solid #8E8E8E;
+    justify-content: center;
+    display: flex;
+    align-items: end;
+    gap: 0.2rem; }
 
 .nav-header {
   width: 100%;
@@ -5184,7 +5195,8 @@ button, .btn, a.btn {
 
 .footer {
   padding: 5rem 0rem;
-  border-top: 1px solid rgba(142, 142, 142, 0.5); }
+  border-top: 1px solid rgba(142, 142, 142, 0.5);
+  background-color: #25252D; }
   .footer-top {
     padding-bottom: 1.5rem;
     border-bottom: 1.5px solid #FFE600; }
@@ -5575,25 +5587,49 @@ button, .btn, a.btn {
     margin-top: 3rem;
     color: #000000; }
 
-.hero-services-section {
-  background-image: url(../../assets/img/services-bg.jpg);
-  background-position: top; }
+.hero-services-section, .hero-industries-section {
+  background-position: top;
+  min-height: 70rem; }
+  .hero-services-section::before, .hero-industries-section::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../assets/img/services-abs-top.svg);
+    width: 14rem;
+    height: 28rem;
+    background-size: contain;
+    bottom: 0;
+    left: 2px;
+    background-position: left bottom;
+    background-repeat: no-repeat; }
+    @media (max-width: 74.99em) {
+      .hero-services-section::before, .hero-industries-section::before {
+        top: 30rem;
+        bottom: auto; } }
 
-.hero-services-section-content {
-  padding-bottom: 20rem;
+.hero-services-section {
+  background-image: url(../../assets/img/services-bg.jpg); }
+
+.hero-industries-section {
+  background-image: url(../../assets/img/industries-bg.jpg); }
+
+.services-industries-list {
+  margin-top: -16rem;
   position: relative; }
-  .hero-services-section-content h1, .hero-services-section-content .h1 {
-    border-bottom: 2px solid #FFE600; }
-  .hero-services-section-content::before {
+  .services-industries-list::before {
     content: "";
     position: absolute;
     background-image: url(../../assets/img/icons/Group-245.svg);
-    height: 15rem;
-    width: 15rem;
-    background-size: cover;
-    top: 20rem;
-    right: -10rem;
-    opacity: 90%; }
+    height: 12rem;
+    width: 12rem;
+    background-size: contain;
+    top: 0;
+    right: 3rem;
+    transform: translateY(-50%); }
+
+.hero-services-section-content, .hero-industries-section-content {
+  position: relative; }
+  .hero-services-section-content h1, .hero-services-section-content .h1, .hero-industries-section-content h1, .hero-industries-section-content .h1 {
+    border-bottom: 2px solid #FFE600; }
 
 .hero-contact-section {
   background-image: url(../../assets/img/contact-bg.jpg);
