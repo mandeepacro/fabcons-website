@@ -4461,6 +4461,11 @@ h6, .h6,
   font-weight: 600;
   margin-bottom: 0.8rem; }
 
+.h6-capital {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 0.02rem; }
+
 .title-subheading {
   font-weight: normal;
   font-size: 2rem;
@@ -4561,6 +4566,9 @@ a, span {
 
 .text-secondary-light {
   color: #FFE600; }
+
+.text-secondary-dark {
+  color: #F9E000; }
 
 .text-light-blue {
   color: #D3E5FD; }
@@ -6010,29 +6018,35 @@ button, .btn, a.btn {
 
 .hero-process-detail {
   background: url(/assets/img/process-detail-bg.jpg);
-  background-position: top;
-  position: relative; }
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 14rem; }
   .hero-process-detail h2, .hero-process-detail .h2 {
     padding-bottom: 2rem;
     border-bottom: 2px solid #FFE600; }
-  .hero-process-detail .overview {
-    padding-top: 8rem; }
-    .hero-process-detail .overview::before {
-      position: absolute;
-      content: "";
-      background-image: url(/assets/img/icons/top-left.svg);
-      height: 10rem;
-      width: 10rem;
-      background-size: cover;
-      top: 36.5rem;
-      right: 137.5rem;
-      opacity: 90%; }
+
+.overview-section {
+  position: relative;
+  margin-top: -4rem; }
+  .overview-section::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/img/process-detail-top.svg);
+    height: 10rem;
+    width: 10rem;
+    background-size: cover;
+    transform: translateY(-100%);
+    top: 0;
+    left: 0; }
 
 .activity {
   position: relative; }
   .activity .serial-no {
     display: flex;
-    align-items: baseline; }
+    align-items: baseline;
+    gap: 0.4rem; }
   .activity .activity-right {
     position: relative; }
     .activity .activity-right::before {
@@ -6048,3 +6062,10 @@ button, .btn, a.btn {
     .activity .activity-right .activity-right-img {
       border: 1px solid #d9d9d9;
       width: 100%; }
+  .activity .process-row {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem; }
+    .activity .process-row .process-text-col {
+      padding-bottom: 6rem;
+      border-bottom: 1px solid #DEDEDE; }

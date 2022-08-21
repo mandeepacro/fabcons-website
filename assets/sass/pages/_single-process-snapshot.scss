@@ -1,27 +1,33 @@
 .hero-process-detail{
     background: url(/assets/img/process-detail-bg.jpg);
-    background-position: top;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+    padding-bottom: 14rem;
 
     h2{
         padding-bottom: 2rem;
         border-bottom: 2px solid $secondary-light;
     }
 
-    .overview{
-        padding-top: 8rem;
-        &::before{
-            position: absolute;
-            content: "";
-            background-image: url(/assets/img/icons/top-left.svg);
-            height: 10rem;
-            width: 10rem;
-            background-size: cover;
-            top: 36.5rem;
-            right: 137.5rem;
-            opacity: 90%;
-          }
-    }
+   
+}
+
+.overview-section{
+    position: relative;
+    margin-top: -4rem;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/assets/img/process-detail-top.svg);
+        height: 10rem;
+        width: 10rem;
+        background-size: cover;
+        transform: translateY(-100%);
+        top:0;
+        left: 0;
+      }
 }
 
 .activity{
@@ -30,6 +36,7 @@
     .serial-no{
         display: flex;
         align-items: baseline;
+        gap: 0.4rem;
    }
 
    .activity-right{
@@ -52,4 +59,16 @@
     width: 100%;
     }
    }
+
+   .process-row{
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 4rem;
+
+     .process-text-col{
+        padding-bottom: 6rem;
+        border-bottom: 1px solid $primary-color-light;
+     }
+   }
 }
+
