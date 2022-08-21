@@ -5595,6 +5595,39 @@ button, .btn, a.btn {
     margin-top: 3rem;
     color: #000000; }
 
+.hero-industry-detail {
+  background-image: url(../img/industry-page-bg.jpg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  position: relative; }
+  .hero-industry-detail .hero-industry-content {
+    margin-bottom: 15rem;
+    border-bottom: 3px solid #FFE600; }
+
+.feature .feature-content {
+  width: 90%;
+  margin-right: 2rem; }
+  @media (max-width: 47.99em) {
+    .feature .feature-content {
+      width: 100%;
+      margin-bottom: 2rem; } }
+  .feature .feature-content-img {
+    min-width: 8rem;
+    min-height: 8rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #DEDEDE;
+    margin-bottom: 1.5rem; }
+    .feature .feature-content-img img {
+      width: 50%;
+      height: auto; }
+
 .hero-services-section, .hero-industries-section {
   background-position: top;
   min-height: 70rem; }
@@ -6017,7 +6050,7 @@ button, .btn, a.btn {
         width: 3rem; }
 
 .hero-process-detail {
-  background: url(/assets/img/process-detail-bg.jpg);
+  background: url(../img/process-detail-bg.jpg);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6033,7 +6066,7 @@ button, .btn, a.btn {
   .overview-section::before {
     position: absolute;
     content: "";
-    background-image: url(/assets/img/process-detail-top.svg);
+    background-image: url(../img/process-detail-top.svg);
     height: 10rem;
     width: 10rem;
     background-size: cover;
@@ -6052,7 +6085,7 @@ button, .btn, a.btn {
     .activity .activity-right::before {
       position: absolute;
       content: "";
-      background-image: url(/assets/img/icons/Group-288.svg);
+      background-image: url(../img/icons/Group-288.svg);
       height: 6rem;
       width: 6rem;
       background-size: contain;

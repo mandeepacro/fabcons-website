@@ -1,5 +1,5 @@
 .hero-process-detail{
-    background: url(/assets/img/process-detail-bg.jpg);
+    background: url(../img/process-detail-bg.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,8 +10,6 @@
         padding-bottom: 2rem;
         border-bottom: 2px solid $secondary-light;
     }
-
-   
 }
 
 .overview-section{
@@ -20,7 +18,7 @@
     &::before{
         position: absolute;
         content: "";
-        background-image: url(/assets/img/process-detail-top.svg);
+        background-image: url(../img/process-detail-top.svg);
         height: 10rem;
         width: 10rem;
         background-size: cover;
@@ -45,7 +43,7 @@
     &::before{
         position: absolute;
         content: "";
-        background-image: url(/assets/img/icons/Group-288.svg);
+        background-image: url(../img/icons/Group-288.svg);
         height: 6rem;
         width: 6rem;
         background-size: contain;

@@ -1,0 +1,39 @@
+.hero-industry-detail{
+    background-image: url(../img/industry-page-bg.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    .hero-industry-content{
+        margin-bottom: 15rem;
+        border-bottom: 3px solid $secondary-light;
+    }
+}
+
+
+.feature {
+   
+    .feature-content{
+      width: 90%;
+      margin-right: 2rem;
+
+      @include res(sm){
+        width: 100%;
+        margin-bottom: 2rem
+      }
+  
+      &-img {
+        @include circle(8rem);
+        @include flex-center;
+        border: 1.5px solid $primary-color-light;
+        margin-bottom: 1.5rem;
+  
+        img {
+          width: 50%;
+          height: auto;
+        }
+    }
+    }
+}
