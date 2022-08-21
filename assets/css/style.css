@@ -4584,7 +4584,7 @@ a, span {
 
 .tag {
   background-color: #FFE600;
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 1rem;
   font-weight: 700;
   font-size: 14px;
   color: #000000;
@@ -4955,6 +4955,104 @@ button, .btn, a.btn {
     align-items: end;
     gap: 0.2rem; }
 
+.blog-card .blog-content {
+  background-color: #2E2E38; }
+
+.blog-card .blog-bottom {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.blog-card .blog-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+  .blog-card .blog-author img {
+    min-width: 5rem;
+    min-height: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top; }
+
+@media (max-width: 61.99em) {
+  .blog-card-lg {
+    margin-bottom: 4rem; } }
+
+.blog-card-lg .blog-content {
+  padding: 2.4rem 3.2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.blog-card-hori:not(:last-child) {
+  margin-bottom: 2rem;
+  display: block; }
+
+.blog-card-hori .blog-img {
+  max-height: 22rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative; }
+  @media (max-width: 35.99em) {
+    .blog-card-hori .blog-img {
+      max-height: 100%; } }
+  .blog-card-hori .blog-img img {
+    object-fit: cover;
+    width: 100%;
+    object-position: center; }
+
+.blog-card-hori .blog-content {
+  height: 100%; }
+
+.blog-card-hori .blog-author img {
+  min-width: 4rem;
+  min-height: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top; }
+
+.blog-card-hori .tag {
+  padding: 0.2rem 1rem; }
+
+@media (max-width: 35.99em) {
+  .blog-card-hori .blog-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem; } }
+
+.blog-card-ver .blog-author img, .blog-card-hori .blog-author img {
+  min-width: 4rem;
+  min-height: 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top; }
+
+.blog-card-ver .tag, .blog-card-hori .tag {
+  padding: 0.2rem 1rem; }
+
+.blog-card-ver .blog-content, .blog-card-hori .blog-content {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+
+.blog-card-ver {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem; }
+  .blog-card-ver .blog-img {
+    max-height: 25rem;
+    overflow: hidden; }
+
 .nav-header {
   width: 100%;
   position: fixed;
@@ -5292,6 +5390,37 @@ button, .btn, a.btn {
   .container-xxl, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     padding-left: 2rem;
     padding-right: 2rem; } }
+
+.icon-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr)); }
+  .icon-grid-6 {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 61.99em) {
+    .icon-item {
+      max-width: 100%;
+      margin-bottom: 2rem; } }
+  .icon-item-img {
+    min-width: 8rem;
+    min-height: 8rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border: 2px solid #FFE600; }
+    .icon-item-img img {
+      width: 50%;
+      height: auto; }
 
 .top-section-index {
   background-image: url(../../assets/img/hero-section-bg.jpg); }
@@ -5817,37 +5946,10 @@ button, .btn, a.btn {
     line-height: 2;
     margin-top: 1rem; }
 
-.employee {
+.employee-benefit-section {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.94) 100%), url(/assets/img/employee-bg.jpg);
   background-position: bottom;
   background-size: cover; }
-  .employee .employee-body {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr)); }
-  .employee .employee-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    @media (max-width: 61.99em) {
-      .employee .employee-content {
-        max-width: 100%;
-        margin-bottom: 2rem; } }
-    .employee .employee-content-img {
-      min-width: 8rem;
-      min-height: 8rem;
-      width: 8rem;
-      height: 8rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-      border: 2px solid #FFE600; }
-      .employee .employee-content-img img {
-        width: 50%;
-        height: auto; }
 
 .career-card {
   padding: 1.6rem 3.2rem 1.6rem;
@@ -6067,5 +6169,24 @@ button, .btn, a.btn {
     align-items: center;
     margin-bottom: 4rem; }
     .activity .process-row .process-text-col {
-      padding-bottom: 6rem;
+      padding-top: 2rem;
+      padding-bottom: 4rem;
       border-bottom: 1px solid #DEDEDE; }
+
+.hero-blogs-section {
+  background-image: url(../../assets/img/blogs-bg.jpg);
+  background-size: contain;
+  background-position: right bottom;
+  padding-bottom: 25rem;
+  background-repeat: no-repeat; }
+  .hero-blogs-section-content {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #FFE600; }
+
+.top-blogs-section {
+  margin-top: -28rem; }
+
+.blog-categories {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.79) 0%, rgba(255, 255, 255, 0.95) 56.25%), url(../../assets/img/blog-categories-bg.jpg);
+  background-size: cover;
+  background-position: bottom; }

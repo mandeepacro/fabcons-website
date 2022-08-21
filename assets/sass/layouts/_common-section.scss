@@ -16,3 +16,42 @@
       padding-right: 2rem;
     }
   }
+
+
+
+
+
+.icon-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+
+    &-6
+{
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}    }
+
+
+.icon-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include res(md){
+    max-width: 100%;
+    margin-bottom: 2rem
+  }
+
+  &-img {
+    @include circle(8rem);
+    @include flex-center;
+    margin-bottom: 1.5rem;
+    border: 2px solid $secondary-light;
+
+    img {
+      width: 50%;
+      height: auto;
+            }
+        }
+    }
