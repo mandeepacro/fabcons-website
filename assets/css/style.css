@@ -4596,6 +4596,7 @@ a, span {
 
 button, .btn, a.btn {
   padding: 1rem 2rem;
+  display: inline-block;
   background-color: #FFE600;
   color: #25252D;
   font-size: 1.5rem;
@@ -4610,7 +4611,7 @@ button, .btn, a.btn {
   button:active, .btn:active, a.btn:active {
     transform: translateY(0); }
 
-.btn-icon {
+.btn-icon, a.btn-icon {
   min-width: 4rem;
   min-height: 4rem;
   width: 4rem;
@@ -4621,37 +4622,37 @@ button, .btn, a.btn {
   justify-content: center;
   padding: 0;
   position: relative; }
-  .btn-icon svg, .btn-icon img {
+  .btn-icon svg, .btn-icon img, a.btn-icon svg, a.btn-icon img {
     height: 50%;
     color: #FFFFFF; }
-  .btn-icon-outline {
+  .btn-icon-outline, a.btn-icon-outline {
     border: 1.5px inset #FFFFFF;
     background-color: transparent; }
-  .btn-icon-transparent {
+  .btn-icon-transparent, a.btn-icon-transparent {
     background-color: transparent; }
-    .btn-icon-transparent:hover {
+    .btn-icon-transparent:hover, a.btn-icon-transparent:hover {
       background-color: rgba(255, 255, 255, 0.1); }
-  .btn-icon:hover {
+  .btn-icon:hover, a.btn-icon:hover {
     transform: translateY(-2px);
     border-color: #FFE600; }
-  .btn-icon:active {
+  .btn-icon:active, a.btn-icon:active {
     transform: translateY(0); }
 
-.btn-white {
+.btn-white, a.btn-white {
   background-color: #FFFFFF;
   color: #000000;
   font-size: 1.5rem; }
 
-.btn-outline {
+.btn-outline, a.btn-outline {
   background-color: transparent;
   color: #FFFFFF;
   border: 2px inset #FFFFFF; }
-  .btn-outline:hover {
+  .btn-outline:hover, a.btn-outline:hover {
     border-color: #FFE600; }
-  .btn-outline:active {
+  .btn-outline:active, a.btn-outline:active {
     color: #FFE600; }
 
-.btn-black {
+.btn-black, a.btn-black {
   background-color: #000000;
   color: #FFFFFF; }
 
