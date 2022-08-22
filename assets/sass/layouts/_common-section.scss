@@ -9,17 +9,12 @@
     }
   }
   
-
   .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl{
     @include res(sm){
       padding-left: 2rem;
       padding-right: 2rem;
     }
   }
-
-
-
-
 
 .icon-grid{
     display: grid;

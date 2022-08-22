@@ -4865,10 +4865,26 @@ button, .btn, a.btn {
     .software-row {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
 
+.software-light-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  border-top: 1px solid #FFE600; }
+  @media (max-width: 47.99em) {
+    .software-light-row {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
+
 .software-block {
   padding: 5rem 0;
   display: flex;
   border: 1px inset rgba(142, 142, 142, 0.5);
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.software-light-block {
+  padding: 5rem 0;
+  display: flex;
+  border: 1px solid #FFE600;
   justify-content: center;
   align-items: center;
   width: 100%; }
@@ -5471,7 +5487,7 @@ button, .btn, a.btn {
   position: relative;
   padding: 7rem 9rem;
   border: 5px solid #FFE600;
-  background-image: url(../../assets/img/Rectangle-57.jpg);
+  background-image: url(../assets/img/Rectangle-57.jpg);
   background-size: cover;
   width: 100%;
   padding-bottom: 16rem; }

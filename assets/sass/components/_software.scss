@@ -18,10 +18,30 @@
         grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
       }
     }
+
+    &-light-row{
+      display: grid;
+         grid-template-columns: repeat(auto-fit,minmax(23rem, 1fr));
+       border-top: 1px solid $secondary-light;
+ 
+       @include res(sm){
+         grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+       }
+     }
+
     &-block {
       padding: 5rem 0;
       display: flex;
       border: 1px inset $border-grey-light;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    &-light-block {
+      padding: 5rem 0;
+      display: flex;
+      border: 1px solid $secondary-light;
       justify-content: center;
       align-items: center;
       width: 100%;
