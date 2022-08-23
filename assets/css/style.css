@@ -5774,6 +5774,18 @@ button, .btn, a.btn {
       width: 50%;
       height: auto; }
 
+.pricing-detail {
+  margin-bottom: 4rem; }
+  .pricing-detail .pricing-content {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem; }
+  .pricing-detail .pricing-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 1rem; }
+
 .hero-services-section, .hero-industries-section {
   background-position: top;
   min-height: 70rem; }

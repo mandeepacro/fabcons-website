@@ -37,3 +37,20 @@
     }
     }
 }
+
+.pricing-detail{
+ margin-bottom: 4rem;
+
+.pricing-content{
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+    }
+
+  .pricing-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 1rem;
+  }
+}
