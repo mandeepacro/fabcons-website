@@ -4690,7 +4690,7 @@ button, .btn, a.btn {
   top: 0;
   width: 100%; }
 
-.owl-carousel-industry .owl-nav, .owl-carousel-testimonial .owl-nav {
+.owl-carousel-industry .owl-nav, .owl-carousel-testimonial .owl-nav, .owl-carousel-services .owl-nav {
   position: absolute;
   left: 50%;
   width: 100vw;
@@ -4865,10 +4865,26 @@ button, .btn, a.btn {
     .software-row {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
 
+.software-light-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  border-top: 1px solid #FFE600; }
+  @media (max-width: 47.99em) {
+    .software-light-row {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
+
 .software-block {
   padding: 5rem 0;
   display: flex;
   border: 1px inset rgba(142, 142, 142, 0.5);
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.software-light-block {
+  padding: 5rem 0;
+  display: flex;
+  border: 1px solid #FFE600;
   justify-content: center;
   align-items: center;
   width: 100%; }
@@ -4955,6 +4971,9 @@ button, .btn, a.btn {
     display: flex;
     align-items: end;
     gap: 0.2rem; }
+  .gradient-img-card-sm {
+    height: 18rem;
+    width: 25rem; }
 
 .blog-card .blog-content {
   background-color: #2E2E38; }
@@ -5569,7 +5588,7 @@ button, .btn, a.btn {
   position: relative;
   padding: 7rem 9rem;
   border: 5px solid #FFE600;
-  background-image: url(../../assets/img/Rectangle-57.jpg);
+  background-image: url(../assets/img/Rectangle-57.jpg);
   background-size: cover;
   width: 100%;
   padding-bottom: 16rem; }
@@ -5855,6 +5874,38 @@ button, .btn, a.btn {
     .feature .feature-content-img img {
       width: 50%;
       height: auto; }
+
+.pricing-detail {
+  margin-bottom: 4rem; }
+  .pricing-detail .pricing-content {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem; }
+  .pricing-detail .pricing-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 1rem; }
+
+.article-section .col-sm-4 {
+  display: flex; }
+
+.article-section .article-img img {
+  width: 96%;
+  padding-bottom: 2rem; }
+
+.article-section .article-author {
+  width: 96%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .article-section .article-author .author-img {
+    display: flex;
+    align-items: center; }
+    .article-section .article-author .author-img img {
+      width: 7rem;
+      margin-right: 1rem; }
 
 .hero-services-section, .hero-industries-section {
   background-position: top;
