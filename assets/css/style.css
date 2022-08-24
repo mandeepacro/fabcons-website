@@ -5423,6 +5423,104 @@ button, .btn, a.btn {
       width: 50%;
       height: auto; }
 
+.cta-section {
+  position: relative;
+  background-color: #FFFFFF; }
+  .cta-section .cta-img {
+    width: 50%;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden; }
+    .cta-section .cta-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    @media (max-width: 47.99em) {
+      .cta-section .cta-img {
+        width: 100%;
+        height: 40rem; } }
+    .cta-section .cta-img::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/icons/top-right.svg);
+      height: 11rem;
+      width: 11rem;
+      background-size: cover; }
+    .cta-section .cta-img-left img {
+      clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%); }
+      @media (max-width: 47.99em) {
+        .cta-section .cta-img-left img {
+          clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%); } }
+    .cta-section .cta-img-left::before {
+      top: 3rem;
+      right: 10%;
+      z-index: 10; }
+      @media (max-width: 47.99em) {
+        .cta-section .cta-img-left::before {
+          bottom: 3rem;
+          top: auto;
+          right: 3rem; } }
+    .cta-section .cta-img-right img {
+      clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%); }
+      @media (max-width: 47.99em) {
+        .cta-section .cta-img-right img {
+          clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%); } }
+    .cta-section .cta-img-right::before {
+      top: 5rem;
+      right: 15%;
+      z-index: 10;
+      transform: rotateY(180deg); }
+      @media (max-width: 47.99em) {
+        .cta-section .cta-img-right::before {
+          bottom: 50%;
+          transform: rotate(180deg);
+          top: auto;
+          right: 3rem; } }
+  .cta-section .cta-content {
+    width: 50%;
+    position: relative;
+    padding: 6rem;
+    padding-right: 6.5vw; }
+    @media (max-width: 47.99em) {
+      .cta-section .cta-content {
+        width: 100%;
+        padding-right: 6rem; } }
+    .cta-section .cta-content::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../assets/img/icons/right-top.svg);
+      height: 11rem;
+      width: 11rem;
+      background-size: cover;
+      top: 0.5rem;
+      right: 0.5rem; }
+    .cta-section .cta-content-right {
+      text-align: end;
+      padding-right: 6.5vw; }
+      .cta-section .cta-content-right::before {
+        top: 0.5rem;
+        right: 0.5rem; }
+        @media (max-width: 47.99em) {
+          .cta-section .cta-content-right::before {
+            top: auto;
+            right: auto;
+            transform: rotate(180deg);
+            bottom: 0.5rem;
+            left: 0.5rem; } }
+    .cta-section .cta-content-left {
+      padding-left: 6.5vw; }
+      .cta-section .cta-content-left::before {
+        top: 0.5rem;
+        left: 0.5rem;
+        transform: rotateY(180deg); }
+        @media (max-width: 47.99em) {
+          .cta-section .cta-content-left::before {
+            top: auto;
+            right: auto;
+            transform: rotate(180deg);
+            bottom: 0.5rem;
+            left: 0.5rem; } }
+
 .top-section-index {
   background-image: url(../../assets/img/hero-section-bg.jpg); }
   @media (max-width: 47.99em) {
@@ -5843,60 +5941,6 @@ button, .btn, a.btn {
       width: 4rem; }
   .contact-us .contact-address .address-info {
     margin-left: 2rem; }
-
-.log-in {
-  position: relative; }
-  .log-in .log-in-image {
-    width: 50%;
-    object-fit: cover;
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%); }
-    @media (max-width: 47.99em) {
-      .log-in .log-in-image {
-        width: 100%;
-        height: 40rem;
-        clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%); } }
-  .log-in .log-in-content {
-    width: 50%;
-    text-align: end;
-    position: relative;
-    padding: 6rem;
-    padding-right: 6.5vw; }
-    @media (max-width: 47.99em) {
-      .log-in .log-in-content {
-        width: 100%;
-        padding-right: 6rem; } }
-    .log-in .log-in-content::before {
-      content: "";
-      position: absolute;
-      background-image: url(../../assets/img/icons/right-top.svg);
-      height: 11rem;
-      width: 11rem;
-      background-size: cover;
-      top: 0.5rem;
-      right: 0.5rem;
-      opacity: 95%; }
-      @media (max-width: 47.99em) {
-        .log-in .log-in-content::before {
-          top: auto;
-          right: auto;
-          transform: rotate(180deg);
-          bottom: 0.5rem;
-          left: 0.5rem; } }
-    .log-in .log-in-content::after {
-      content: "";
-      position: absolute;
-      background-image: url(../../assets/img/icons/top-right.svg);
-      height: 11rem;
-      width: 11rem;
-      background-size: cover;
-      top: 3rem;
-      left: -25%;
-      opacity: 95%; }
-      @media (max-width: 47.99em) {
-        .log-in .log-in-content::after {
-          top: -50%;
-          left: auto;
-          right: 3rem; } }
 
 .hero-career-detail-section {
   background-image: url(../../assets/img/career-detail.jpg);

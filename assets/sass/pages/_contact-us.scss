@@ -1,122 +1,54 @@
 .hero-contact-section {
-    background-image: url(../../assets/img/contact-bg.jpg);
-    background-position: top;
-    background-size: cover;
-  }
-  
-  .hero-contact-section-top {
-    padding-bottom: 2.5rem;
-    border-bottom: 2px solid $secondary-light ;
-    margin-bottom: 4rem;  
+  background-image: url(../../assets/img/contact-bg.jpg);
+  background-position: top;
+  background-size: cover;
+}
 
-    h4{
-        color: #AEAEAE;
-       }
+.hero-contact-section-top {
+  padding-bottom: 2.5rem;
+  border-bottom: 2px solid $secondary-light ;
+  margin-bottom: 4rem;
+
+  h4 {
+    color: #AEAEAE;
   }
-  
-  .contact-us{
-  
-  .contact-card{
+}
+
+.contact-us {
+
+  .contact-card {
     padding: 4rem 3rem;
   }
-  .contact-column{
-    @include res(md){
+
+  .contact-column {
+    @include res(md) {
       margin-top: 4rem;
     }
   }
-  .contact-address{
-      width: 100%;
+
+  .contact-address {
+    width: 100%;
     margin-left: 1rem;
     padding: 2rem;
     display: flex;
     justify-content: left;
-    align-items: center; 
+    align-items: center;
     border-bottom: 1px solid $border-grey-light;
 
-    .address-logo{
-        @include circle(8rem);
-        border: 1.2px solid $text-grey;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-     
-        .contact-logo{
-            width: 4rem;
-        }
-    }
+    .address-logo {
+      @include circle(8rem);
+      border: 1.2px solid $text-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    .address-info{
-        margin-left: 2rem;
-    }
-  } 
-}
-
- 
-.log-in{
-    position: relative;
-
-  .log-in-image{
-    width: 50%;
-    object-fit: cover;
-    clip-path:polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-    
-    @include res(sm){
-      width: 100%;
-      height: 40rem;
-      clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
-    }
-    }
-
-    .log-in-content{
-      width: 50%;
-      text-align: end;
-      position: relative;
-      padding: 6rem;
-      padding-right: 6.5vw;
-
-      @include res(sm){
-        width: 100%;
-       
-        padding-right: 6rem;;
+      .contact-logo {
+        width: 4rem;
       }
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url(../../assets/img/icons/right-top.svg);
-      height: 11rem;
-      width: 11rem;
-      background-size: cover;
-      top: 0.5rem;
-      right: 0.5rem;
-      opacity: 95%;
-
-      @include res(sm){
-        top: auto;
-      right: auto;
-      transform: rotate(180deg);
-      bottom: 0.5rem;
-      left: 0.5rem;
-      }
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        background-image: url(../../assets/img/icons/top-right.svg);
-        height: 11rem;
-        width: 11rem;
-        background-size: cover;
-        top: 3rem;
-        left: -25%;
-        opacity: 95%;
-
-        @include res(sm){
-          top:-50%;
-          left: auto;
-        right: 3rem;
-        }
-      }
-  
     }
+
+    .address-info {
+      margin-left: 2rem;
+    }
+  }
 }
