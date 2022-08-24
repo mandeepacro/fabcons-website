@@ -54,3 +54,37 @@
     margin: 2rem 1rem;
   }
 }
+
+
+.article-section{
+
+  .col-sm-4{
+    display: flex;
+  }
+
+.article-img{
+
+  img{
+    width: 96%;
+    padding-bottom: 2rem;
+  }
+}
+
+.article-author{
+  width: 96%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  .author-img{
+    display: flex;
+    align-items: center;
+
+  img{
+    width: 7rem;
+    margin-right: 1rem;
+  }
+  }
+  }
+}

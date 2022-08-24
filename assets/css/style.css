@@ -4690,7 +4690,7 @@ button, .btn, a.btn {
   top: 0;
   width: 100%; }
 
-.owl-carousel-industry .owl-nav, .owl-carousel-testimonial .owl-nav {
+.owl-carousel-industry .owl-nav, .owl-carousel-testimonial .owl-nav, .owl-carousel-services .owl-nav {
   position: absolute;
   left: 50%;
   width: 100vw;
@@ -4971,6 +4971,9 @@ button, .btn, a.btn {
     display: flex;
     align-items: end;
     gap: 0.2rem; }
+  .gradient-img-card-sm {
+    height: 18rem;
+    width: 25rem; }
 
 .blog-card .blog-content {
   background-color: #2E2E38; }
@@ -5785,6 +5788,26 @@ button, .btn, a.btn {
     justify-content: space-around;
     align-items: center;
     margin: 2rem 1rem; }
+
+.article-section .col-sm-4 {
+  display: flex; }
+
+.article-section .article-img img {
+  width: 96%;
+  padding-bottom: 2rem; }
+
+.article-section .article-author {
+  width: 96%;
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .article-section .article-author .author-img {
+    display: flex;
+    align-items: center; }
+    .article-section .article-author .author-img img {
+      width: 7rem;
+      margin-right: 1rem; }
 
 .hero-services-section, .hero-industries-section {
   background-position: top;
