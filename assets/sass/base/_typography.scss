@@ -109,7 +109,9 @@ a,span{
   font-family: Inter;
   font-weight: inherit;
 }
-
+.p-2x{
+  line-height: 2
+}
 .p-small{
   @include small-fs;
 }

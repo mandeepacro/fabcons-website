@@ -22,14 +22,20 @@
     border-bottom: 3px solid rgba( $secondary-light,0.3);
     transition: $transition-primary;
     transform-origin: left;
-
+    &::-webkit-input-placeholder, 
+    &:-ms-input-placeholder,
+    &::placeholder {
+        color: lighten($text-grey,60%);
+      }
     &:focus{
         border-bottom: 3px solid $secondary-light;
     }
 
     &-dark{
-        
+        color: $text-dark;
     }
+
+   
     }
 
     .form-submit{

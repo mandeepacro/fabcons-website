@@ -1,54 +1,53 @@
-.hero-career-detail-section{
-    background-image: url(../../assets/img/career-detail.jpg);
-    background-position: top;
-    background-size: cover;
-  
-  .hero-career-detail-section-content {
-    margin-bottom: 10rem;  
+.hero-career-detail-section {
+    background-image: radial-gradient(47.37% 93.08% at 81.06% 23.63%, rgba(255, 255, 255, 0.37) 0%, rgba(255, 255, 255, 0.44) 46.35%, #FCFCFC 100%),url(../../assets/img/career-detail.jpg);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1.8px solid $border-grey;
 
-    p{
-        font-size: 2.05rem;
-        color: #ADADAD;
-        padding-bottom: 0.5rem;
-    } 
-  } 
-}
+    @include res(md){
+        background-image: radial-gradient(47.37% 93.08% at 81.06% 23.63%, rgba(255, 255, 255, 0.68) 0%, rgba(255, 255, 255, 0.785) 46.35%, #FCFCFC 100%),url(../../assets/img/career-detail.jpg);
+        background-size: cover;
+    }
 
-    .roles{
-        border: 3px solid #c5c5c5;
-        padding-bottom: 8rem;
-        }
-        
-        .duties{
-            border-bottom: 3px solid #c5c5c5;
-            padding: 4rem 0rem;
+    .hero-career-detail-section-content {
+        margin-bottom: 10rem;
 
-            p{
-                font-size: 1.8rem; 
-                padding-bottom: 1rem;
-            }
-        }
-
-        .apply{
-            display: flex;
-            padding: 14rem 6rem;
-        }
-
-    .experience{
-        padding: 1rem 0rem;
-        border-bottom: 3px solid #c5c5c5;
-        margin-bottom: 4rem;
-        
-        h3{
-            padding-top: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        p{
-            font-size: 1.8rem;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            margin-top: -1rem;
-            color: #787878;
+        p {
+            font-size: 2.05rem;
+            color: #ADADAD;
+            padding-bottom: 0.5rem;
         }
     }
+}
+
+.job-detail-section {
+    padding: 3rem 0 2rem;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $border-grey;
+    }
+
+    h4 {
+        margin-bottom: 3rem;
+    }
+
+    p {
+        color: $text-dark;
+        padding-bottom: 1rem;
+    }
+
+   
+}
+
+
+.apply {
+    display: flex;
+    justify-content: end;
+    margin-top: 8rem;
+}
+
+.job-post-bottom{
+    border-top: 1.8px solid $border-grey;
+    padding-top: 3rem;
+}

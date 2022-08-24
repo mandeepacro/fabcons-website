@@ -6,6 +6,13 @@
     position: relative;
     padding-bottom: 14rem;
 
+    @include res(md){
+      background: url(../img/process-detail-bgmobile.jpg);
+      background-position: bottom center;
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+    }
+
     h2{
         padding-bottom: 2rem;
         border-bottom: 2px solid $secondary-light;

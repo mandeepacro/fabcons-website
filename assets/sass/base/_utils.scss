@@ -54,4 +54,10 @@
     color: $text-dark;
     font-family: Manrope;
     display: inline-block;
+
+    &-lg{
+        @include base-fs;
+        font-weight: 800;
+        padding: 1.4rem 2rem;
+    }
 }
