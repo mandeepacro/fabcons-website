@@ -34,8 +34,17 @@ button,.btn, a.btn{
         color: $color-white
     }
     &-outline{
-        border: 1.5px inset $color-white;
+        border: 1.5px solid $color-white;
         background-color: transparent;
+
+        &-dark{
+            border-color: $text-grey;
+            
+            svg,img{
+                filter: brightness(50%);
+                
+            }
+        }
     }
 
     &-transparent{

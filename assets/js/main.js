@@ -69,11 +69,13 @@ feather.replace();
         margin:35,
         stagePadding:60,
         dots:false,
+        touchDrag:true,
+        mouseDrag  : true,
         autoplay:false,
         navElement:'div',
         navText: [
-          `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline" style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/left-white.svg" /></button>`,
-          `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/right-white.svg" /> </button>`],
+          `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline btn-icon-outline-dark" style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/left-white.svg" /></button>`,
+          `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline btn-icon-outline-dark"  style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/right-white.svg" /> </button>`],
       });
 
     //console.log("initialize owlcarousel")
@@ -82,7 +84,6 @@ feather.replace();
   function initializeFeatherIcons(){
     feather.replace()
     console.log("initialize feather icons")
-
   }
 
   $(document).ready(function(){

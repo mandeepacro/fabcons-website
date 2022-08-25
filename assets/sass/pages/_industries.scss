@@ -2,12 +2,12 @@
     background-image: url(../img/industry-page-bg.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
-    height: 100vh;
+   padding-bottom: 4rem;
     background-size: cover;
     position: relative;
 
     .hero-industry-content{
-        margin-bottom: 15rem;
+        margin-bottom: 25rem;
         border-bottom: 3px solid $secondary-light;
     }
 }
@@ -87,4 +87,59 @@
   }
   }
   }
+}
+
+.industry-services-section{
+  padding-bottom: 4rem;
+}
+.industry-services{
+  &-block {
+    margin-top: 2rem;
+      border-top: 1px solid $text-grey;
+      display: flex;
+     
+      @include res(md){
+        flex-direction: column;
+      }
+
+      &-options {
+        flex-direction: column;
+        gap: 4rem;
+        padding:  3rem 0 !important;
+        border-right: 1px solid $text-grey;
+        min-width: 30rem;
+
+        @include res(md){
+          flex-direction: row;
+          border-right: 0;
+          padding-bottom: 0 !important;
+        }
+
+          li {
+  
+            a {
+              padding: 1rem 2.4rem;
+              font-family: Manrope;
+              font-weight: 600;
+              color: $text-grey;
+            }
+  
+            &.ui-tabs-active a {
+              background-color: $grey-dark;
+              color: $secondary-light;
+            }
+          }
+      }
+
+    }
+    
+    &-tab{
+      padding: 4rem 0 4rem 4rem;
+      flex-grow: 1;
+
+      @include res(md){
+        padding: 2rem 0;
+      }
+
+    }
 }

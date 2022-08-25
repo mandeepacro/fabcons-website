@@ -117,5 +117,30 @@
             max-height: 25rem;overflow: hidden;
         }
     }
+
+    &-white{
+        h5,p{
+            color: $text-dark;
+        }
+      
+        .blog-content{
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
+        }
+       
+        .blog-bottom{
+            align-items: flex-end;
+            p{
+                color: $text-dark;
+            }
+
+            .blog-author{
+                .text p{
+                    color: $text-grey;
+                }
+            }
+        }
+    }
 }
 
