@@ -5000,6 +5000,9 @@ button, .btn, a.btn {
     display: flex;
     align-items: end;
     gap: 0.2rem; }
+  .gradient-img-card-links {
+    width: 20rem;
+    height: 18rem; }
   .gradient-img-card-sm {
     height: 18rem;
     width: 25rem; }
@@ -5602,7 +5605,8 @@ button, .btn, a.btn {
       right: 0.5rem; }
     .cta-section .cta-content-right {
       text-align: end;
-      padding-right: 6.5vw; }
+      padding-right: 6.5vw;
+      align-items: end; }
       .cta-section .cta-content-right::before {
         top: 0.5rem;
         right: 0.5rem; }
@@ -6119,6 +6123,20 @@ button, .btn, a.btn {
       width: 4rem; }
   .contact-us .contact-address .address-info {
     margin-left: 2rem; }
+
+.useful-links {
+  margin-top: 7.2rem;
+  position: relative; }
+  .useful-links::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/img/icons/Group-244.svg);
+    height: 12rem;
+    width: 12rem;
+    background-size: contain;
+    top: 0.4rem;
+    left: 0.4rem;
+    transform: translateY(-50%); }
 
 .hero-career-detail-section {
   background-image: radial-gradient(47.37% 93.08% at 81.06% 23.63%, rgba(255, 255, 255, 0.37) 0%, rgba(255, 255, 255, 0.44) 46.35%, #FCFCFC 100%), url(../../assets/img/career-detail.jpg);
