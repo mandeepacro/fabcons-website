@@ -39,7 +39,7 @@ button,.btn, a.btn{
 
         &-dark{
             border-color: $text-grey;
-            
+            background-color: $color-white;
             svg,img{
                 filter: brightness(50%);
                 

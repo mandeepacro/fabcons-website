@@ -36,7 +36,12 @@
         &-item{
             margin-bottom: 0.8rem;
             display: flex;
+            align-items: center;
         justify-content: space-between;
+
+        h6{
+            font-weight: 900;
+        }
         }
     }
 

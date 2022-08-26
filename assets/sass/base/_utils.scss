@@ -13,7 +13,9 @@
 .bg-light-grey{
     background-color: $grey-bg;
 }
-
+.bg-light-gr{
+    background: linear-gradient(276.93deg, #F7F7F7 2.21%, #EBEBEB 98.13%);
+}
 .bg-darker{
     background-color: $grey-dark;
 }
@@ -65,4 +67,8 @@
 .border-top-grey{
     padding-top: 2rem;
    border-bottom: 1px solid $text-grey;
+}
+
+.section-sm{
+    padding: 5rem 0;
 }

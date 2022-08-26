@@ -56,6 +56,7 @@ feather.replace();
         dots:false,
         autoplay:false,
         navElement:'div',
+       
         navText: [
           `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline" style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/left-white.svg" /></button>`,
           `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/right-white.svg" /> </button>`],
@@ -66,13 +67,26 @@ feather.replace();
         items:5,
         nav:true,
         autoWidth:true,
-        margin:35,
         stagePadding:60,
         dots:false,
         touchDrag:true,
         mouseDrag  : true,
         autoplay:false,
         navElement:'div',
+        responsive:{
+          0:{
+           margin: 15
+          },
+          600:{
+            margin: 20
+          },
+          1000:{
+            margin: 25
+          },
+          1400:{
+            margin: 30
+          }
+      },
         navText: [
           `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline btn-icon-outline-dark" style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/left-white.svg" /></button>`,
           `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline btn-icon-outline-dark"  style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/right-white.svg" /> </button>`],
