@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <!--vendors css-->
   <link rel="stylesheet" href="../assets/vendors/owl-carousel/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="../assets/vendors/lightbox/css/lightbox.min.css" /> -->
   <!-- <link rel="stylesheet" href="..//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
   <!-- Favicon Icon -->
   <link rel="shortcut icon" href="" type="image/x-icon" />
@@ -644,6 +645,57 @@
     </div>
   </section>
 
+  <section class="videos-section">
+    <div class="container">
+        <div class="section-heading-block">
+          <h2 class="text-center">
+            Watch  it in action
+          </h2>
+        </div>
+        </div>
+
+        <div class="owl-carousel owl-carousel-videos" id="video_container">
+          <a class="video-tile youtube-link" ytSrc="tU1b1H2EWU4" title="See Video">
+            <i data-feather="play-circle" class="video-tile-icon"></i>
+            <img src="https://images.unsplash.com/photo-1661565883728-c29018265f32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="industry" class="video-tile-thumb">
+            <div class="video-tile-content">
+              <h3 class="text-secondary-light">
+                Video Tile 1
+              </h3>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamelit ut aliquam
+              </p>
+            </div>
+          </a>
+          
+          <a class="video-tile youtube-link" ytSrc="tU1b1H2EWU4" title="See Video">
+            <i data-feather="play-circle" class="video-tile-icon"></i>
+            <img src="https://images.unsplash.com/photo-1661668105704-2587e586a6a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="industry" class="video-tile-thumb">
+            <div class="video-tile-content">
+              <h3 class="text-secondary-light">
+                Video Tile
+              </h3>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamelit ut aliquam
+              </p>
+            </div>
+          </a>
+
+          <a class="video-tile youtube-link" ytSrc="tU1b1H2EWU4" title="See Video">
+            <i data-feather="play-circle" class="video-tile-icon"></i>
+            <img src="https://images.unsplash.com/photo-1661496036882-30dd4fac8eb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="industry" class="video-tile-thumb">
+            <div class="video-tile-content">
+              <h3 class="text-secondary-light">
+                Video Tile
+              </h3>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquamelit ut aliquam
+              </p>
+            </div>
+          </a>
+          </div>
+  </section>
+
 
   <section class="pricing-section bg-light-gr">
     <div class="container">
@@ -1164,8 +1216,33 @@
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<!-- <script src="../assets/vendors/lightbox/js/lightbox.min.js"></script> -->
 <script src="../assets/vendors/owl-carousel/owl.carousel.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bigpicture@2.6.2/dist/BigPicture.min.js" integrity="sha256-4BpOvK8XRKdiTg46pPG4tTGatJ9f9XBRLoK5cwDesp0=" crossorigin="anonymous"></script>
+
 <script src="../assets/js/main.js"></script>
+
+<script>
+  // opens gallery w/ all three images
+  function setClickHandler(id, fn) {
+				document.getElementById(id).onclick = fn
+			}
+
+  setClickHandler('video_container', function (e) {
+    var classname = e.target.className;
+
+ if(classname && classname.includes("youtube-link")){
+  BigPicture({
+						el: e.target,
+						ytSrc: e.target.getAttribute('ytSrc'),
+					})
+ }
+
+    
+ })
+    
+</script>
 
 </html>

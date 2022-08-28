@@ -62,6 +62,21 @@ feather.replace();
           `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/right-white.svg" /> </button>`],
       });
 
+      $(".owl-carousel-videos").owlCarousel({
+        loop:true,
+        items:2,
+        nav:true,
+        center:true,
+        margin:0,
+        dots:false,
+        stagePadding: 0,
+        navElement:'div',
+       
+        navText: [
+          `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline btn-icon-outline-dark" style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/left-white.svg" /></button>`,
+          `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline btn-icon-outline-dark"  style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/right-white.svg" /> </button>`],
+      });
+
       $(".owl-carousel-services").owlCarousel({
         loop:false,
         items:5,
