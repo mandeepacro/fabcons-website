@@ -36,12 +36,19 @@
         @include square(8rem);
         stroke-width: 1;
         color: $primary-color-medium;
+
+        @include res(md){
+            @include square(6rem);
+        }
     }
     &-content{
         pointer-events: none;
-        
         z-index: 2;
-
+            h3{
+                @include res(md){
+                    font-size: 2.4rem;
+                }
+            }
 
         p{
             margin-top: 1.6rem;

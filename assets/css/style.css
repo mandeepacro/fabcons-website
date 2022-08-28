@@ -4755,6 +4755,10 @@ a {
     p,
     a {
       font-size: 15px; } }
+  @media (max-width: 47.99em) {
+    p,
+    a {
+      font-size: 14px; } }
 
 a, span {
   font-family: Inter;
@@ -4794,6 +4798,9 @@ a, span {
   @media (max-width: 61.99em) {
     .text-base {
       font-size: 15px; } }
+  @media (max-width: 47.99em) {
+    .text-base {
+      font-size: 14px; } }
 
 .primary-font {
   font-family: Manrope; }
@@ -4858,6 +4865,9 @@ a, span {
     @media (max-width: 61.99em) {
       .tag-lg {
         font-size: 15px; } }
+    @media (max-width: 47.99em) {
+      .tag-lg {
+        font-size: 14px; } }
 
 .border-top-grey {
   padding-top: 2rem;
@@ -5461,9 +5471,18 @@ button, .btn, a.btn {
     height: 8rem;
     stroke-width: 1;
     color: #D3E5FD; }
+    @media (max-width: 61.99em) {
+      .video-tile-icon {
+        min-width: 6rem;
+        min-height: 6rem;
+        width: 6rem;
+        height: 6rem; } }
   .video-tile-content {
     pointer-events: none;
     z-index: 2; }
+    @media (max-width: 61.99em) {
+      .video-tile-content h3, .video-tile-content .h3 {
+        font-size: 2.4rem; } }
     .video-tile-content p {
       margin-top: 1.6rem;
       line-height: 1.8; }
