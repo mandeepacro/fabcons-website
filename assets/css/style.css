@@ -4876,6 +4876,11 @@ a, span {
 .section-sm {
   padding: 5rem 0; }
 
+.capital-xs {
+  font-size: 1.6rem;
+  font-family: Manrope;
+  letter-spacing: 0.2rem; }
+
 button, .btn, a.btn {
   padding: 1rem 2rem;
   display: inline-block;
@@ -5489,6 +5494,13 @@ button, .btn, a.btn {
 
 .videos-section .owl-carousel-videos .owl-item.center .video-tile {
   transform: scale(1); }
+
+.modal-body p {
+  letter-spacing: 0.09rem; }
+
+.modal-body .modal-pricing {
+  display: flex;
+  gap: 5rem; }
 
 .nav-header {
   width: 100%;

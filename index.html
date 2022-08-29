@@ -710,7 +710,6 @@
         </div>
     </div>
   </section>
- 
 
   <section class="clients-section pb-5">
     <div class="container">
@@ -966,7 +965,7 @@
                         <i data-feather="phone"></i>
                       </button>
 
-                      <button class="btn btn-white">
+                      <button class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         See More
                       </button>
                     </div>
@@ -1310,7 +1309,6 @@
             </div>
           </section>
 
-
           <div class="contact-section-grid">
            
             <div class="row gx-0">
@@ -1502,7 +1500,7 @@
                   <div class="col-sm-6">
                       <div class="footer-top-right">
                         <button class="btn btn-white">Login</button>       
-                        <button class="btn btn-outline">Talk to Us</button> 
+                        <button class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#contact-modal">Talk to Us</button> 
                         </div>
                 </div>
               </div>
@@ -1600,7 +1598,128 @@
 
           </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg m-auto">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0 pb-sm-2">
+                <h3 class="modal-title text-dark pt-lg-2 ps-lg-4" id="exampleModalLabel">Accounts Payable Specialist Profile</h3>
+                <i data-feather="x" data-bs-dismiss="modal" aria-label="Close pe-5"></i>
+              </div>
+              <div class="modal-body">
+
+              <p class="capital-xs text-grey ms-lg-4">ABOUT THE POSITION</p>
+              <p class="text-dark text-600 ms-lg-4">Accounts Payable Specialist can perform activities such as 2 Way/3 Way matching of 
+                invoices with POs and GRs/Packing Slips, entry of invoices and utilities, coding of expenses,  entering checks for 
+                further approval, tracking payables, vendor reconciliations and other miscellaneous accounts payable activities.</p>
+
+                <p class="capital-xs text-grey pt-lg-4 ms-lg-4">QUALIFICATIONS</p>
+                <span class="tag px-lg-4 py-lg-3 ms-lg-4 ">Bachelors of Commerce Qualification</span>
+                <span class="tag px-lg-4 py-lg-3 ms-lg-4">Undergraduate Degree in Accounting</span>
+
+              <p class="capital-xs text-grey ms-lg-4 pt-lg-4 pt-1">Microsoft Excel Proficiency -<span class="text-dark ps-lg-2">HIGH</span></p>
+              <p class="text-dark text-600 ms-lg-4">Advanced PowerPoint and MS Excel skills including knowledge of 
+                tools such as conditional formatting, pivot tables, macros and finance formulae.</p>
+
+              <p class="capital-xs text-grey pt-lg-4 ms-lg-4">EXPERIENCE</p>
+              <h3 class="text-dark pt-lg-2 ps-lg-3">2 - 6 Years</h3>
+              <p class="text-grey ms-lg-4">They have US accounting experience of one-to-three years. 
+              The overall accounting experience sis about four to seven years.</p>
+
+              <p class="text-grey ms-lg-4 pt-lg-4">PRICING</p>
+
+              <div class="modal-pricing">
+                <div class="modal-market">
+                  <p class="text-grey ms-lg-4">Market</p>
+                  <h2 class="text-grey text-decoration-line-through ms-lg-4">$12000</h2>
+                </div>
+                <div class="modal-market">
+                  <p class="text-dark ms-lg-4">Our Cost </p>
+                <h2 class="text-dark text-decoration-line-through ms-lg-4">$9500</h2>
+                </div>
                 
+              </div>
+
+              <div class="modal-footer justify-content-lg-between">
+                <p class="text-grey">* All numbers are representative figures</p>
+                <button type="button" class="btn-black" data-bs-dismiss="modal">Contact Us</button>
+              </div> 
+
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0 pb-sm-2">
+                <h3 class="modal-title ms-lg-4" id="exampleModalLabel">Contact Us</h3>
+                <i data-feather="x" data-bs-dismiss="modal" aria-label="Close me-5"></i>
+              </div>
+              <div class="modal-body">
+                <div class="form-group ms-4 pb-lg-4">
+          
+                  <div class="row">
+
+                    <div class="col-sm-6">
+                      
+                      <label class="form-label">Company Name</label>
+                        <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                      <label class="form-label">Contact Person Name</label>
+                      <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+                      
+                    </div>
+
+                    <div class="col-xl-4">
+
+                      <label class="form-label">Contact Number</label>
+                        <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+                  </div>
+
+                  <div class="col-xl-4">
+
+                    <label class="form-label">Country</label>
+                    <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+                  
+                  </div>
+
+                  <div class="col-xl-4">
+
+                    <label class="form-label">Email Address</label>
+                    <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+                  </div>
+
+                    <div class="col-sm-12">
+
+                      <label class="form-label">Message</label>
+                      <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+                    </div>
+
+                  </div>
+
+                 </div>
+              </div>
+
+              <div class="modal-footer justify-content-lg-between pt-lg-3">
+                <p class="text-grey">* All numbers are representative figures</p>
+                <button type="button" class="btn-black" data-bs-dismiss="modal">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
 </body>
 <script src="https://unpkg.com/feather-icons"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
