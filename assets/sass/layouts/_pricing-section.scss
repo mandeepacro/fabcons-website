@@ -40,7 +40,6 @@
         transform: translateY(-20%);
     }
     
-    
   }
   .pricing-detail{
     z-index: 2;
@@ -49,9 +48,7 @@
   padding: 1.6rem 4.8rem;
   overflow: hidden;
   position: relative;
-  &-white{
-    background-color: $color-white;
-  }
+ 
   @include res(sm){
     padding: 2rem 2rem;
   }
@@ -74,6 +71,14 @@
 
     @include res(sm){
       transform: translate(10%,-15%);
+    }
+  }
+  
+  &-white{
+    background-color: $color-white;
+
+    &::before{
+      background-image: url(../../assets/img/globe-dark.svg);
     }
   }
   

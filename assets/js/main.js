@@ -24,8 +24,8 @@ feather.replace();
         stagePadding:0,
         navElement:'div',
         navText: [
-          `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline" style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/left-white.svg" /></button>`,
-          `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/right-white.svg" /> </button>`],
+          `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline" style="opacity:1;right:0;top:0;"> <img src="/assets/img/icons/left-white.svg" /></button>`,
+          `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="/assets/img/icons/right-white.svg" /> </button>`],
           responsiveClass:true,
     responsive:{
         0:{
@@ -60,6 +60,32 @@ feather.replace();
         navText: [
           `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline" style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/left-white.svg" /></button>`,
           `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline"  style="opacity:1;right:0;top:0;"> <img src="./assets/img/icons/right-white.svg" /> </button>`],
+      });
+
+      $(".owl-carousel-videos").owlCarousel({
+        loop:true,
+        items:2,
+        nav:true,
+        center:true,
+        margin:0,
+        stagePadding: 0,
+        navElement:'div',
+       
+        navText: [
+          `<button type="button" id="lg-prev-1" aria-label="Previous slide" class="btn-icon btn-icon-outline btn-icon-outline-dark" style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/left-white.svg" /></button>`,
+          `<button type="button" id="lg-next-1" aria-label="Next slide" class="btn-icon btn-icon-outline btn-icon-outline-dark"  style="opacity:1;right:0;top:0;"> <img src="../assets/img/icons/right-white.svg" /> </button>`],
+          responsive:{
+            0:{
+              items:1,
+              dots: true,
+              nav:false
+            },
+            800:{
+              items:2,
+              dots: false,
+              nav:true
+            },
+        }
       });
 
       $(".owl-carousel-services").owlCarousel({
