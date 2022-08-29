@@ -5495,10 +5495,28 @@ button, .btn, a.btn {
 .videos-section .owl-carousel-videos .owl-item.center .video-tile {
   transform: scale(1); }
 
-.modal-body p {
+.modal-content .modal-header h3, .modal-content .modal-header .h3 {
+  font-size: 2.5rem; }
+
+.modal-content .modal-body p {
   letter-spacing: 0.09rem; }
 
-.modal-body .modal-pricing {
+.modal-content .modal-body .contact-success {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0rem; }
+  .modal-content .modal-body .contact-success img {
+    width: 8rem; }
+
+.modal-content .modal-body .dialog {
+  text-align: center;
+  padding-bottom: 1rem; }
+  .modal-content .modal-body .dialog h3, .modal-content .modal-body .dialog .h3 {
+    font-size: 2.4rem; }
+  .modal-content .modal-body .dialog h4, .modal-content .modal-body .dialog .h4 {
+    font-size: 2rem; }
+
+.modal-content .modal-body .modal-pricing {
   display: flex;
   gap: 5rem; }
 
