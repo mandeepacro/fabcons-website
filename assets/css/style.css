@@ -4789,6 +4789,9 @@ a, span {
   @media (max-width: 61.99em) {
     .p-big {
       font-size: 16px; } }
+  @media (max-width: 35.99em) {
+    .p-big {
+      font-size: 15px; } }
 
 .p-lesstext {
   line-height: 1.3; }
@@ -5240,6 +5243,9 @@ button, .btn, a.btn {
     @media (max-width: 61.99em) {
       .tabs ul li a {
         font-size: 16px; } }
+    @media (max-width: 35.99em) {
+      .tabs ul li a {
+        font-size: 15px; } }
   .tabs ul li.ui-tabs-active a {
     font-weight: 600; }
 
@@ -6114,7 +6120,7 @@ button, .btn, a.btn {
   position: relative;
   padding: 7rem 9rem;
   border: 5px solid #FFE600;
-  background-image: url(../assets/img/Rectangle-57.jpg);
+  background-image: url(../../assets/img/Rectangle-57.jpg);
   background-size: cover;
   width: 100%;
   padding-bottom: 16rem; }
@@ -6674,10 +6680,13 @@ button, .btn, a.btn {
       margin-bottom: 0; }
 
 .hero-process-snapshot-section {
-  background-image: url(/assets/img/process-snapshot-bg.jpg);
+  background-image: url(../../assets/img/process-snapshot-bg.jpg);
   background-position: top;
   padding-bottom: 8rem;
   position: relative; }
+  @media (max-width: 47.99em) {
+    .hero-process-snapshot-section {
+      padding-bottom: 4rem; } }
   .hero-process-snapshot-section::before {
     content: "";
     position: absolute;
@@ -6685,8 +6694,8 @@ button, .btn, a.btn {
     height: 10rem;
     width: 10rem;
     background-size: cover;
-    top: 28rem;
-    right: 136rem;
+    top: 25rem;
+    left: 0;
     opacity: 90%; }
   .hero-process-snapshot-section h2, .hero-process-snapshot-section .h2 {
     padding-bottom: 2rem;
@@ -6696,74 +6705,74 @@ button, .btn, a.btn {
     .hero-process-snapshot-section .hero-process-snapshot-content::before {
       content: "";
       position: absolute;
-      background-image: url(../assets/img/icons/Group-245.svg);
+      background-image: url(../../assets/img/icons/Group-245.svg);
       height: 10rem;
       width: 10rem;
       background-size: cover;
-      top: 47rem;
+      bottom: 2rem;
       right: 1rem;
       opacity: 90%; }
 
-.process-snapshot-list {
-  margin-right: 2rem; }
-  .process-snapshot-list .process-snapshot-box {
-    margin-bottom: 3rem;
-    display: flex; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-1 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(../../assets/img/Rectangle-25.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-2 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-30.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-3 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-35.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-4 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-40.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-5 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-45.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-6 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-50.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-    .process-snapshot-list .process-snapshot-box .process-snapshot-img-7 {
-      background: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%), url(/assets/img/Rectangle-55.png);
-      background-size: 21.5rem 30.9rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      width: 35%; }
-  .process-snapshot-list .process-snapshot-content {
-    padding: 2rem 2rem;
-    width: 70%; }
-    .process-snapshot-list .process-snapshot-content p {
-      padding-bottom: 2rem;
-      border-bottom: 2px solid rgba(255, 230, 0, 0.1); }
+.process-snapshot-box {
+  margin-bottom: 3rem;
+  background-color: #2E2E38;
+  display: flex; }
+  @media (max-width: 35.99em) {
+    .process-snapshot-box {
+      flex-direction: column; } }
+  .process-snapshot-box .process-snapshot-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 25rem;
+    min-width: 25rem;
+    position: relative;
+    padding: 1rem; }
+    @media (max-width: 35.99em) {
+      .process-snapshot-box .process-snapshot-img {
+        width: 100%;
+        height: 26rem;
+        min-width: 100%; } }
+    .process-snapshot-box .process-snapshot-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .process-snapshot-box .process-snapshot-img p {
+      z-index: 2; }
+    .process-snapshot-box .process-snapshot-img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background-image: linear-gradient(3.47deg, #1A1A20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
+
+.process-snapshot-content {
+  padding: 2rem 2rem;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .process-snapshot-content p {
+    color: #DADADA;
+    line-height: 1.8;
+    font-size: 14px; }
+    @media (max-width: 61.99em) {
+      .process-snapshot-content p {
+        font-size: 14px; } }
+    @media (max-width: 47.99em) {
+      .process-snapshot-content p {
+        font-size: 12px; } }
+  .process-snapshot-content-end {
+    text-align: end;
+    padding-top: 1.6rem;
+    border-top: 2px solid rgba(255, 230, 0, 0.5); }
 
 .hero-blog-post-section {
   padding-bottom: 4rem;
@@ -6865,7 +6874,7 @@ button, .btn, a.btn {
 
 .hero-process-detail {
   background: url(../img/process-detail-bg.jpg);
-  background-position: bottom right;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -6875,7 +6884,10 @@ button, .btn, a.btn {
       background: url(../img/process-detail-bgmobile.jpg);
       background-position: bottom center;
       background-size: 100% 50%;
-      background-repeat: no-repeat; } }
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .hero-process-detail p {
+        margin-top: 18rem; } }
   .hero-process-detail h2, .hero-process-detail .h2 {
     padding-bottom: 2rem;
     border-bottom: 2px solid #FFE600; }
@@ -6900,6 +6912,9 @@ button, .btn, a.btn {
     display: flex;
     align-items: baseline;
     gap: 0.4rem; }
+  @media (max-width: 61.99em) {
+    .activity {
+      padding-top: 2rem; } }
   .activity .activity-right {
     position: relative; }
     .activity .activity-right::before {

@@ -1,6 +1,6 @@
 .hero-process-detail{
     background: url(../img/process-detail-bg.jpg);
-    background-position: bottom right;
+    background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -11,6 +11,10 @@
       background-position: bottom center;
       background-size: 100% 50%;
       background-repeat: no-repeat;
+      background-size: cover;
+      p{
+        margin-top: 18rem;
+      }
     }
 
     h2{
@@ -42,6 +46,10 @@
         display: flex;
         align-items: baseline;
         gap: 0.4rem;
+   }
+
+   @include res(md){
+    padding-top: 2rem;
    }
 
    .activity-right{
