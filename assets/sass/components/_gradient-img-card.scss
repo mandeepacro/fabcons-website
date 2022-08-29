@@ -35,7 +35,7 @@
       .text {
         
         z-index: 5;
-
+        line-height: 1.6;
         svg{
           color: $secondary-light;
           transform: translateY(10%);
@@ -54,7 +54,6 @@
       }
 
       &-links{
-        width: 20rem;
         height: 18rem;
       }
 
@@ -65,3 +64,4 @@
       }
     }
   }
+  

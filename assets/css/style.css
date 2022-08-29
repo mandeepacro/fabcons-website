@@ -4682,26 +4682,49 @@ h2, .h2,
   line-height: 1.2;
   letter-spacing: 0;
   margin-bottom: 1.8rem; }
+  @media (max-width: 47.99em) {
+    h2, .h2,
+    .h2 {
+      font-size: 4rem; } }
 
 h3, .h3,
 .h3 {
   font-size: 3rem;
   line-height: 3.5rem; }
+  @media (max-width: 47.99em) {
+    h3, .h3,
+    .h3 {
+      font-size: 3.6rem; } }
 
 h4, .h4 {
   font-size: 2rem;
   line-height: 3rem; }
+  @media (max-width: 47.99em) {
+    h4, .h4 {
+      font-size: 2.4rem; } }
 
 h5, .h5,
 .h5 {
   font-size: 1.8rem;
   margin-bottom: 1rem; }
+  @media (max-width: 47.99em) {
+    h5, .h5,
+    .h5 {
+      font-size: 2.2rem; } }
 
 h6, .h6,
 .h6 {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 0.8rem; }
+  @media (max-width: 61.99em) {
+    h6, .h6,
+    .h6 {
+      font-size: 15px; } }
+  @media (max-width: 47.99em) {
+    h6, .h6,
+    .h6 {
+      font-size: 14px; } }
 
 .h6-capital {
   text-transform: uppercase;
@@ -4718,6 +4741,9 @@ h6, .h6,
 
 .title-heading {
   font-size: 4.2rem; }
+  @media (max-width: 47.99em) {
+    .title-heading {
+      font-size: 4.8rem; } }
 
 .section-heading-block {
   margin-bottom: 5rem; }
@@ -4777,11 +4803,17 @@ a, span {
       font-size: 12px; } }
 
 .p-quote {
-  font-size: 1.6rem;
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.05rem;
   font-weight: 400;
   font-style: italic; }
+  @media (max-width: 61.99em) {
+    .p-quote {
+      font-size: 15px; } }
+  @media (max-width: 47.99em) {
+    .p-quote {
+      font-size: 14px; } }
 
 .p-big {
   font-size: 18px;
@@ -4887,6 +4919,7 @@ a, span {
 button, .btn, a.btn {
   padding: 1rem 2rem;
   display: inline-block;
+  text-align: center;
   background-color: #FFE600;
   color: #25252D;
   font-size: 1.5rem;
@@ -5224,6 +5257,8 @@ button, .btn, a.btn {
       .offer .option-img img {
         width: 50%;
         height: auto; }
+    .offer .option p {
+      margin-top: 1rem; }
 
 .tabs ul {
   display: flex;
@@ -5275,7 +5310,8 @@ button, .btn, a.btn {
     width: 100%;
     background: linear-gradient(3.47deg, #1a1a20 19.3%, rgba(37, 37, 45, 0.05) 91.8%); }
   .gradient-img-card .text {
-    z-index: 5; }
+    z-index: 5;
+    line-height: 1.6; }
     .gradient-img-card .text svg {
       color: #FFE600;
       transform: translateY(10%); }
@@ -5287,7 +5323,6 @@ button, .btn, a.btn {
     align-items: end;
     gap: 0.2rem; }
   .gradient-img-card-links {
-    width: 20rem;
     height: 18rem; }
   .gradient-img-card-sm {
     height: 18rem;
@@ -6252,7 +6287,7 @@ button, .btn, a.btn {
   padding-top: 1.4rem; }
 
 .team-section .team-card {
-  margin: 0 1.5rem 3rem;
+  margin-bottom: 3rem;
   border: 1px solid #8E8E8E;
   position: relative;
   overflow: hidden; }
@@ -6295,14 +6330,17 @@ button, .btn, a.btn {
   background-image: url(../../assets/img/wcu-bg.jpg);
   width: 100%;
   background-size: cover;
-  background-position: bottom center;
-  padding: 4rem 6rem; }
-  .why-choose-us-box h2, .why-choose-us-box .h2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
+  background-position: bottom left;
+  padding: 6rem 6rem 4rem 6rem; }
+  @media (max-width: 47.99em) {
+    .why-choose-us-box {
+      padding: 5rem 3rem 4rem 3rem; } }
   .why-choose-us-box .why-choose-us-card {
     padding-bottom: 3rem;
     width: 90%; }
+    @media (max-width: 47.99em) {
+      .why-choose-us-box .why-choose-us-card {
+        width: 100%; } }
     .why-choose-us-box .why-choose-us-card .wcu-option {
       min-width: 10rem;
       min-height: 10rem;
@@ -6328,17 +6366,22 @@ button, .btn, a.btn {
   background-size: cover;
   width: 100%;
   padding-bottom: 16rem; }
-  .staff-section .staff-big-tile h2, .staff-section .staff-big-tile .h2 {
-    font-weight: 700; }
-  .staff-section .staff-big-tile p {
-    font-size: 2rem;
-    padding-top: 2rem; }
+  @media (max-width: 74.99em) {
+    .staff-section .staff-big-tile {
+      padding: 7rem 5rem; } }
+  @media (max-width: 61.99em) {
+    .staff-section .staff-big-tile {
+      padding: 4rem 1rem;
+      outline: none;
+      text-align: center;
+      border: 0.5rem solid #FFE600; } }
 
 .staff-right {
   padding: 2rem 0; }
 
 .staff-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 2.8rem;
   margin-top: 1.6rem; }
 
@@ -6548,6 +6591,11 @@ button, .btn, a.btn {
   background-image: url(../../assets/img/contact-bg.jpg);
   background-position: top;
   background-size: cover; }
+  @media (max-width: 47.99em) {
+    .hero-contact-section {
+      background-position: 0 7rem;
+      background-size: 100% auto;
+      background-repeat: no-repeat; } }
 
 .hero-contact-section-top {
   padding-bottom: 2.5rem;
@@ -6571,6 +6619,9 @@ button, .btn, a.btn {
   justify-content: left;
   align-items: center;
   border-bottom: 1px solid rgba(142, 142, 142, 0.5); }
+  @media (max-width: 61.99em) {
+    .contact-us .contact-address {
+      padding: 2rem 0; } }
   .contact-us .contact-address .address-logo {
     min-width: 8rem;
     min-height: 8rem;
@@ -6589,6 +6640,10 @@ button, .btn, a.btn {
 .useful-links {
   margin-top: 7.2rem;
   position: relative; }
+  .useful-links-row {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
   .useful-links::before {
     content: "";
     position: absolute;
@@ -6599,6 +6654,11 @@ button, .btn, a.btn {
     top: 0.4rem;
     left: 0.4rem;
     transform: translateY(-50%); }
+    @media (max-width: 47.99em) {
+      .useful-links::before {
+        left: auto;
+        right: 1rem;
+        transform: rotate(90deg) translateX(-56%); } }
 
 .hero-career-detail-section {
   background-image: radial-gradient(47.37% 93.08% at 81.06% 23.63%, rgba(255, 255, 255, 0.37) 0%, rgba(255, 255, 255, 0.44) 46.35%, #FCFCFC 100%), url(../../assets/img/career-detail.jpg);
@@ -6690,12 +6750,15 @@ button, .btn, a.btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    gap: 1rem;
+    margin-top: 1.6rem;
+    padding-top: 1.6rem;
+    gap: 0.8rem;
     border-top: 1px solid #FFE600; }
     .career-card-bottom h6, .career-card-bottom .h6 {
       margin-bottom: 0; }
+  @media (max-width: 35.99em) {
+    .career-card {
+      padding: 1.6rem 2rem 1.6rem; } }
 
 .hero-process-snapshot-section {
   background-image: url(../../assets/img/process-snapshot-bg.jpg);
@@ -6966,6 +7029,10 @@ button, .btn, a.btn {
   .hero-blogs-section-content {
     padding-bottom: 4rem;
     border-bottom: 1px solid #FFE600; }
+  @media (max-width: 47.99em) {
+    .hero-blogs-section {
+      background-size: 180%;
+      background-position: left top; } }
 
 .top-blogs-section {
   margin-top: -28rem; }

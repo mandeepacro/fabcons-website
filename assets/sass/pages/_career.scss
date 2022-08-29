@@ -67,13 +67,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 2rem;
-        padding-top: 1rem;
-        gap: 1rem;
+        margin-top: 1.6rem;
+        padding-top: 1.6rem;
+        gap: 0.8rem;
         border-top: 1px solid $secondary-light;
         h6{
           margin-bottom: 0;
         }
+      }
+
+      @include res(xs){
+        padding: 1.6rem 2rem 1.6rem;
       }
     }
 

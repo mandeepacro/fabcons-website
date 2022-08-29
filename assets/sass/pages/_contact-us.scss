@@ -2,6 +2,12 @@
   background-image: url(../../assets/img/contact-bg.jpg);
   background-position: top;
   background-size: cover;
+
+  @include res(sm){
+    background-position: 0 7rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
 }
 
 .hero-contact-section-top {
@@ -30,6 +36,11 @@
     width: 100%;
     margin-left: 1rem;
     padding: 2rem;
+
+    @include res(md){
+      padding: 2rem 0;
+    }
+
     display: flex;
     justify-content: left;
     align-items: center;
@@ -58,6 +69,12 @@
   margin-top: 7.2rem;
   position: relative;
 
+  &-row{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -68,5 +85,11 @@
     top: 0.4rem;
     left: 0.4rem;
     transform: translateY(-50%);
+
+    @include res(sm){
+      left: auto;
+    right: 1rem;
+    transform: rotate(90deg) translateX(-56%);
+    }
 }
 }

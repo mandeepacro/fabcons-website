@@ -20,7 +20,7 @@
 
 .team-section {
   .team-card {
-    margin: 0 1.5rem 3rem;
+    margin-bottom: 3rem;
     border: 1px solid $text-grey;
     position: relative;
     overflow: hidden;
@@ -77,17 +77,23 @@
   background-image: url(../../assets/img/wcu-bg.jpg);
   width: 100%;
   background-size: cover;
-  background-position: bottom center;
-  padding: 4rem 6rem;
+  background-position: bottom left;
+  padding: 6rem 6rem 4rem 6rem;
 
-  h2 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  // h2 {
+  //   padding-top: 3rem;
+  //   padding-bottom: 3rem;
+  // }
+  @include res(sm){
+    padding: 5rem 3rem 4rem 3rem;
   }
-
   .why-choose-us-card {
     padding-bottom: 3rem;
     width: 90%;
+
+    @include res(sm){
+      width: 100%
+    }
 
     .wcu-option {
       @include circle(10rem);
@@ -127,13 +133,15 @@
     width: 100%;
     padding-bottom: 16rem;
 
-    h2 {
-      font-weight: 700;
+    @include res(lg){
+      padding: 7rem 5rem;
     }
 
-    p {
-      font-size: 2rem;
-      padding-top: 2rem;
+    @include res(md){
+      padding: 4rem 1rem;
+      outline: none;
+      text-align: center;
+      border: 0.5rem solid $secondary-light;
     }
   }
 }
@@ -143,7 +151,8 @@
 }
 
 .staff-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(15rem, 1fr));
   gap: 2.8rem;
   margin-top: 1.6rem;
 }
@@ -155,6 +164,7 @@
     border-bottom: 1px solid $text-grey;
   }
 }
+
 .staff-box {
   padding-bottom: 2.5rem;
 

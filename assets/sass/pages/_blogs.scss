@@ -9,6 +9,11 @@
         padding-bottom: 4rem;
         border-bottom: 1px solid $secondary-light;
     }
+
+    @include res(sm){
+        background-size: 180%;
+    background-position: left top;
+    }
 }
 
 .top-blogs-section{
