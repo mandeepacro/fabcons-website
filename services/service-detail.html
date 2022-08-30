@@ -581,7 +581,6 @@
     </div>
   </div>
 
-
   <section class="software-section section-sm bg-white pb-0">
     <div class="section-heading-block">
       <h2 class="text-dark">Software Expertise</h2>
@@ -696,7 +695,6 @@
           </div>
   </section>
 
-
   <section class="pricing-section bg-light-gr">
     <div class="container">
       <h3 class="text-dark">Pricing</h3>
@@ -714,7 +712,7 @@
                 <h2 class="text-dark d-flex gap-2 align-items-end lh-1">$13
                     <span class="text-grey p-small fw-bold primary-font d-inline-block" style="transform: translateY(-2px);">onwards</span>
                 </h2>
-                <button class="btn btn-black">Request for Quote</button>
+                <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#request-modal">Request for Quote</button>
               </div>
             </div>
           </div>
@@ -737,7 +735,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4">
               <div class="pricing-contact">
                 <h2 class="text-white">$1900</h2>
-                <button class="btn">Request for Quote</button>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#request-modal">Request for Quote</button>
               </div>
             </div>
           </div>
@@ -755,7 +753,7 @@
             <div class="col-xl-4 col-lg-4 col-md-4">
               <div class="pricing-contact">
                 <h2 class="text-white">$2500</h2>
-                <button class="btn">Request for Quote</button>
+                <button class="btn" data-bs-toggle="modal" data-bs-target="#request-modal">Request for Quote</button>
               </div>
             </div>
           </div>
@@ -1209,6 +1207,83 @@
 
     </div>
   </div>
+
+  <div class="modal fade" id="request-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg m-auto">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0 pb-sm-2">
+          <h3 class="modal-title text-dark pt-lg-2 ps-lg-4" id="exampleModalLabel">Request Quote</h3>
+          <i data-feather="x" data-bs-dismiss="modal" aria-label="Close pe-5"></i>
+        </div>
+        <div class="modal-body">
+
+          <h4 class="text-grey ps-lg-4">Package Name:<span class="text-dark ps-lg-3">AR Specialist</span></h4>
+          <div class="form-group ms-4 pb-lg-4 me-lg-4">
+          
+            <div class="row">
+
+              <div class="col-sm-6">
+                
+                <label class="form-label">Company Name</label>
+                  <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+              </div>
+
+              <div class="col-sm-6">
+
+                <label class="form-label">Contact Person Name</label>
+                <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+                
+              </div>
+
+              <div class="col-xl-4">
+
+                <label class="form-label">Contact Number</label>
+                  <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+            </div>
+
+            <div class="col-xl-4">
+
+              <label class="form-label">Country</label>
+              <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+            
+            </div>
+
+            <div class="col-xl-4">
+
+              <label class="form-label">Email Address</label>
+              <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+            </div>
+
+              <div class="col-sm-12">
+
+                <label class="form-label">Message</label>
+                <input class="form-input text-dark" type="text" name="text" id="text" aria-label="">
+
+              </div>
+
+            </div>
+
+           </div>
+           
+        </div>
+    
+        <div class="modal-footer justify-content-lg-between">
+          <p class="text-grey">* All numbers are representative figures</p>
+          <button type="button" class="btn-black" data-bs-dismiss="modal">Submit</button>
+        </div> 
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
 
 </body>
 <script src="https://unpkg.com/feather-icons"></script>
