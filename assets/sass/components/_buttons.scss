@@ -11,6 +11,7 @@ button,.btn, a.btn{
     outline: none;
     transition: $transition-primary;
     transition-duration: 100ms;
+    cursor: pointer;
     &:hover{
         transform: translateY(-2px);
     }

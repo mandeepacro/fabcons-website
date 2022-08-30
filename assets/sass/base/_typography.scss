@@ -79,6 +79,7 @@ h6,
   font-size: 2rem;
   letter-spacing: 0.08rem;
   line-height: 1;
+  margin-bottom: 1.6rem;
   text-transform: uppercase;
 }
 .title-heading{
@@ -94,6 +95,12 @@ h6,
   h2 {
     margin-bottom: 0;
   }
+}
+.capital-xs{
+  font-size: 1.6rem;
+  font-family: Manrope;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 .text-300 {
   font-weight: 300 !important;

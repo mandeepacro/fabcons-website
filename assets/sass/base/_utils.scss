@@ -56,6 +56,8 @@
     color: $text-dark;
     font-family: Manrope;
     display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
 
     &-lg{
         @include base-fs;
@@ -73,8 +75,3 @@
     padding: 5rem 0;
 }
 
-.capital-xs{
-    font-size: 1.6rem;
-    font-family: Manrope;
-    letter-spacing: 0.2rem;
-}

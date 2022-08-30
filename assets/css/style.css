@@ -4737,6 +4737,7 @@ h6, .h6,
   font-size: 2rem;
   letter-spacing: 0.08rem;
   line-height: 1;
+  margin-bottom: 1.6rem;
   text-transform: uppercase; }
 
 .title-heading {
@@ -4749,6 +4750,12 @@ h6, .h6,
   margin-bottom: 5rem; }
   .section-heading-block h2, .section-heading-block .h2 {
     margin-bottom: 0; }
+
+.capital-xs {
+  font-size: 1.6rem;
+  font-family: Manrope;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase; }
 
 .text-300 {
   font-weight: 300 !important; }
@@ -4886,7 +4893,9 @@ a, span {
   font-size: 14px;
   color: #000000;
   font-family: Manrope;
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1rem; }
   @media (max-width: 61.99em) {
     .tag {
       font-size: 14px; } }
@@ -4911,11 +4920,6 @@ a, span {
 .section-sm {
   padding: 5rem 0; }
 
-.capital-xs {
-  font-size: 1.6rem;
-  font-family: Manrope;
-  letter-spacing: 0.2rem; }
-
 button, .btn, a.btn {
   padding: 1rem 2rem;
   display: inline-block;
@@ -4928,7 +4932,8 @@ button, .btn, a.btn {
   border: none;
   outline: none;
   transition: all 0.25s ease-in-out;
-  transition-duration: 100ms; }
+  transition-duration: 100ms;
+  cursor: pointer; }
   button:hover, .btn:hover, a.btn:hover {
     transform: translateY(-2px); }
   button:active, .btn:active, a.btn:active {
@@ -5003,19 +5008,24 @@ button, .btn, a.btn {
   width: 100%;
   color: #FFFFFF;
   padding-bottom: 3px;
-  border-bottom: 3px solid rgba(255, 230, 0, 0.3);
+  border-bottom: 1.5px solid rgba(255, 230, 0, 0.6);
   transition: all 0.25s ease-in-out;
   transform-origin: left; }
   .form-input::-webkit-input-placeholder, .form-input:-ms-input-placeholder, .form-input::placeholder {
     color: white; }
   .form-input:focus {
-    border-bottom: 3px solid #FFE600; }
+    border-bottom: 1.5px solid #FFE600; }
   .form-input-dark {
     color: #000000; }
 
 .form-submit {
   padding-top: 5rem;
   text-align: center; }
+
+.form-group-white .form-input {
+  border-bottom: 1.5px solid rgba(249, 224, 0, 0.7); }
+  .form-group-white .form-input:focus {
+    border-bottom: 1.5px solid #F9E000; }
 
 .owl-carousel-topright .owl-nav {
   display: flex;
@@ -5025,7 +5035,11 @@ button, .btn, a.btn {
   top: 0;
   width: 100%; }
 
-.owl-carousel-industry .owl-nav, .owl-carousel-testimonial .owl-nav, .owl-carousel-services .owl-nav, .owl-carousel-videos .owl-nav {
+.owl-carousel-industry .owl-nav,
+.owl-carousel-industry-inner .owl-nav,
+.owl-carousel-testimonial .owl-nav,
+.owl-carousel-services .owl-nav,
+.owl-carousel-videos .owl-nav {
   position: absolute;
   left: 50%;
   width: 100vw;
@@ -5035,8 +5049,24 @@ button, .btn, a.btn {
   top: 50%;
   transform: translate(-50%, -50%); }
 
-.owl-carousel-testimonial .owl-nav, .owl-carousel-services .owl-nav {
+.owl-carousel-testimonial .owl-nav,
+.owl-carousel-services .owl-nav {
   padding: 0 4vw; }
+
+.owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.6rem; }
+  .owl-carousel .owl-dots button.owl-dot {
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: #DADADA; }
+    .owl-carousel .owl-dots button.owl-dot.active {
+      background: #F9E000; }
 
 .industry-carousel .owl-item {
   border-top: 1.5px solid #8E8E8E;
@@ -5536,30 +5566,47 @@ button, .btn, a.btn {
 .videos-section .owl-carousel-videos .owl-item.center .video-tile {
   transform: scale(1); }
 
-.modal-content .modal-header h3, .modal-content .modal-header .h3 {
-  font-size: 2.5rem; }
+.modal-content {
+  border-radius: 0;
+  padding: 0; }
 
-.modal-content .modal-body p {
-  letter-spacing: 0.09rem; }
-
-.modal-content .modal-body .contact-success {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 0rem; }
-  .modal-content .modal-body .contact-success img {
-    width: 8rem; }
-
-.modal-content .modal-body .dialog {
-  text-align: center;
-  padding-bottom: 1rem; }
-  .modal-content .modal-body .dialog h3, .modal-content .modal-body .dialog .h3 {
+.modal-header {
+  padding: 1.6rem 3.2rem;
+  border-bottom: none; }
+  @media (max-width: 74.99em) {
+    .modal-header {
+      border-bottom: 1px solid #DADADA; } }
+  .modal-header .modal-title {
     font-size: 2.4rem; }
-  .modal-content .modal-body .dialog h4, .modal-content .modal-body .dialog .h4 {
-    font-size: 2rem; }
+  .modal-header svg {
+    color: #000000;
+    font-size: 2rem;
+    stroke-width: 1;
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    width: 3.5rem;
+    height: 3.5rem; }
+  .modal-header button {
+    cursor: pointer; }
 
-.modal-content .modal-body .modal-pricing {
+.modal-footer {
   display: flex;
-  gap: 5rem; }
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 3.2rem; }
+
+.modal-body {
+  padding: 2.4rem 3.2rem; }
+  .modal-body .contact-success {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem; }
+    .modal-body .contact-success img {
+      width: 10rem; }
+  .modal-body .modal-content-info {
+    text-align: center; }
+    .modal-body .modal-content-info h3, .modal-body .modal-content-info .h3 {
+      font-size: 2.4rem; }
 
 .nav-header {
   width: 100%;
@@ -6589,12 +6636,13 @@ button, .btn, a.btn {
 
 .hero-contact-section {
   background-image: url(../../assets/img/contact-bg.jpg);
-  background-position: top;
-  background-size: cover; }
-  @media (max-width: 47.99em) {
+  background-position: left 22%;
+  background-size: 80%;
+  background-repeat: no-repeat; }
+  @media (max-width: 61.99em) {
     .hero-contact-section {
-      background-position: 0 7rem;
-      background-size: 100% auto;
+      background-position: 0 6rem;
+      background-size: 100%;
       background-repeat: no-repeat; } }
 
 .hero-contact-section-top {

@@ -1,11 +1,12 @@
 .hero-contact-section {
   background-image: url(../../assets/img/contact-bg.jpg);
-  background-position: top;
-  background-size: cover;
 
-  @include res(sm){
-    background-position: 0 7rem;
-    background-size: 100% auto;
+  background-position: left 22%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  @include res(md){
+    background-position: 0 6rem;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 }
