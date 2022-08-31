@@ -6,11 +6,13 @@ button,.btn, a.btn{
     color: $grey-dark;
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: Manrope;
+    font-family: Manrope !important;
     border: none;
     outline: none;
     transition: $transition-primary;
     transition-duration: 100ms;
+    position: relative;
+    z-index: 10;
     cursor: pointer;
     &:hover{
         transform: translateY(-2px);

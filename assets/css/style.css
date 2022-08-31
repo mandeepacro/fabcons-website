@@ -4928,11 +4928,13 @@ button, .btn, a.btn {
   color: #25252D;
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: Manrope;
+  font-family: Manrope !important;
   border: none;
   outline: none;
   transition: all 0.25s ease-in-out;
   transition-duration: 100ms;
+  position: relative;
+  z-index: 10;
   cursor: pointer; }
   button:hover, .btn:hover, a.btn:hover {
     transform: translateY(-2px); }
@@ -5344,7 +5346,7 @@ button, .btn, a.btn {
     line-height: 1.6; }
     .gradient-img-card .text svg {
       color: #FFE600;
-      transform: translateY(10%); }
+      transform: translateY(2%); }
   .gradient-img-card-alt .text {
     padding-top: 0.7rem;
     border-top: 1px solid #8E8E8E;
@@ -5713,7 +5715,10 @@ button, .btn, a.btn {
   transform: translateY(-3px);
   border: none;
   border-radius: 0;
+  display: none;
   border-bottom: 1px solid #8E8E8E; }
+  .nav-dropdown-menu.show {
+    display: block; }
   .nav-dropdown-menu-close {
     display: flex;
     margin-top: 1.6rem;
@@ -6152,11 +6157,12 @@ button, .btn, a.btn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center; }
-  @media (max-width: 61.99em) {
+  @media (max-width: 74.99em) {
     .icon-item {
       max-width: 100%;
-      margin-bottom: 2rem; } }
+      margin-bottom: 3rem; } }
   .icon-item-img {
     min-width: 8rem;
     min-height: 8rem;
@@ -6266,7 +6272,7 @@ button, .btn, a.btn {
   padding-top: 0; }
 
 .services-bg img {
-  min-height: 100vh;
+  min-height: 72rem;
   height: 100%;
   object-fit: cover;
   object-position: top;

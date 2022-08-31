@@ -134,8 +134,12 @@ $mobile-menu-width: 45rem;
   transform: translateY(-3px);
   border: none;
   border-radius: 0;
-
+  display: none;
   border-bottom: 1px solid $text-grey;
+
+  &.show{
+    display: block;
+  }
 
   &-close {
     display: flex;
