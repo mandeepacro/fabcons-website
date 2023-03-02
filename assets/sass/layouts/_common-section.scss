@@ -3,7 +3,10 @@
     padding-top: 14rem;
     background-size: cover;
     background-position: bottom center;
-
+    min-height: 100vh;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     @include res(sm){
       padding-top: 12rem;
     }

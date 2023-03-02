@@ -5099,7 +5099,8 @@ button, .btn, a.btn {
   padding-bottom: 1rem;
   border-bottom: 1.5px solid #FFE600;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  margin-right: 2rem; }
 
 .industry-img {
   position: absolute;
@@ -5232,7 +5233,7 @@ button, .btn, a.btn {
 
 .software-image {
   width: auto;
-  height: 2rem; }
+  height: 4rem; }
 
 .software-row {
   display: grid;
@@ -5251,7 +5252,7 @@ button, .btn, a.btn {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
 
 .software-block {
-  padding: 5rem 0;
+  padding: 4rem 0.5rem;
   display: flex;
   border: 1px inset rgba(142, 142, 142, 0.5);
   justify-content: center;
@@ -5267,7 +5268,7 @@ button, .btn, a.btn {
   width: 100%; }
 
 .offer {
-  margin-top: 6rem; }
+  margin-top: 10rem; }
   .offer .option {
     width: 100%;
     max-width: 18rem; }
@@ -6130,7 +6131,11 @@ button, .btn, a.btn {
   width: 100%;
   padding-top: 14rem;
   background-size: cover;
-  background-position: bottom center; }
+  background-position: bottom center;
+  min-height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column; }
   @media (max-width: 47.99em) {
     .top-section {
       padding-top: 12rem; } }
