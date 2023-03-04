@@ -5233,7 +5233,8 @@ button, .btn, a.btn {
 
 .software-image {
   width: auto;
-  height: 4rem; }
+  height: 4rem;
+  max-width: 75%; }
 
 .software-row {
   display: grid;
@@ -6412,7 +6413,8 @@ button, .btn, a.btn {
       border: 1.5px solid #FFE600;
       margin-bottom: 2rem; }
     .why-choose-us-box .why-choose-us-card .wcu-image {
-      width: 75%; }
+      width: 75%;
+      filter: invert(1); }
 
 .staff-section .staff-big-tile {
   position: relative;
